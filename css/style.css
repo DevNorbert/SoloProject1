@@ -2,7 +2,9 @@
 /* Colors */
 /* Fonts */
 /* Size */
+/* Border */
 /* Import Mixins */
+/* Border mixins */
 /* Import Normalize css reset */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -394,7 +396,7 @@ h6 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #333333;
+  color: #191919;
   font-weight: 300;
 }
 
@@ -414,7 +416,7 @@ a.small-link {
 }
 
 li {
-  color: #333333;
+  color: #191919;
 }
 
 /* GRID */
@@ -555,7 +557,101 @@ li {
   padding: 15px;
 }
 
-/* Components */
+/* Component Navbar */
+/* Component Navbar Top */
+.component--navbar-top .navbar {
+  background-color: #ffffff;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+/* Component Sidebar */
+/* Sidebar Menu Left */
+.sidebar {
+  background-color: #191919;
+  height: 100vh;
+  width: 200px;
+  margin-top: -61px;
+}
+
+.sidebar .sidebar-top-section {
+  position: relative;
+}
+
+.sidebar .sidebar-top-section .sidebar-logo {
+  width: 150px;
+}
+
+.sidebar .sidebar-top-section .logo {
+  margin: 20px;
+}
+
+.sidebar .sidebar-top-section .sidebar-hamburger {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.sidebar .sidebar-menu .sidebar-item {
+  padding: 15px 10px;
+}
+
+.sidebar .sidebar-menu .sidebar-item .sidebar-link {
+  color: #999999;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.sidebar .sidebar-menu .sidebar-item:hover {
+  background-color: #282828;
+  border-left: 5px solid #f58220;
+  padding-left: 5px;
+}
+
+.sidebar .sidebar-menu .sidebar-item:hover .sidebar-link {
+  color: #ffffff;
+}
+
+.sidebar .sidebar-menu .sidebar-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  margin-top: 30px;
+}
+
+.sidebar .sidebar-menu .sidebar-manager h6 {
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details {
+  position: relative;
+}
+
+.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-image {
+  margin-left: 30px;
+  width: 60px;
+}
+
+.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-online img {
+  position: absolute;
+  top: 0px;
+  left: 62px;
+}
+
+.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+}
+
+.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name a {
+  text-decoration: none;
+}
+
+/* Component Form Field */
 .component--form-field .form-group {
   margin: 15px 0;
   max-width: 100%;
@@ -563,7 +659,7 @@ li {
 
 .component--form-field .form-group .form-control {
   padding: 10px;
-  color: #333333;
+  color: #191919;
   border: 1px solid #e3e3e3;
   border-radius: 3px;
   width: 100%;
@@ -586,7 +682,7 @@ li {
 }
 
 .component--form-field .form-group .input-password:hover .icon-password, .component--form-field .form-group .input-password:focus .icon-password {
-  fill: #333333;
+  fill: #191919;
 }
 
 .component--form-field .form-group .input-password .form-control {
@@ -602,7 +698,64 @@ li {
 }
 
 .component--form-field .form-group .input-password .icon-password:hover, .component--form-field .form-group .input-password .icon-password:focus {
-  fill: #333333;
+  fill: #191919;
+}
+
+/* Component Icons */
+/* Icons */
+.icon {
+  display: inline-block;
+  padding-right: 10px;
+  background-repeat: no-repeat;
+}
+
+/* Icon General */
+.icon-general {
+  background-image: url(../../images/icons/icon-general.svg);
+  width: 16px;
+  height: 15px;
+}
+
+/* Icon Details */
+.icon-details {
+  background-image: url(../../images/icons/icon-details.svg);
+  width: 16px;
+  height: 13px;
+}
+
+/* Icon Links */
+.icon-links {
+  background-image: url(../../images/icons/icon-links.svg);
+  width: 16px;
+  height: 10px;
+}
+
+/* Icon Banners */
+.icon-banners {
+  background-image: url(../../images/icons/icon-banners.svg);
+  width: 16px;
+  height: 13px;
+}
+
+/* Icon Personal */
+.icon-personal {
+  background-image: url(../../images/icons/icon-personal.svg);
+  width: 16px;
+  height: 13px;
+}
+
+/* Icon Payout */
+.icon-payout {
+  background-image: url(../../images/icons/icon-payout.svg);
+  width: 16px;
+  height: 13px;
+}
+
+/* Icon Postback */
+.icon-postback {
+  background-image: url(../../images/icons/icon-postback.svg);
+  width: 16px;
+  height: 14px;
 }
 
 /* Section */

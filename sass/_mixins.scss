@@ -1,0 +1,7 @@
+/* Border mixins */
+@mixin border($detail, $width, $style, $color){
+    border-#{$detail}: $width $style $color;
+}
+@mixin border-default {
+    border: 1px solid $grey;
+}
