@@ -1,0 +1,15 @@
+/* Import Variables */
+@import "variables";
+/* Import Mixins */
+@import "mixins";
+/* Import Normalize css reset */
+@import "normalize";
+/* Import Layout grid */
+@import "layout";
+/* Components */
+@import "components/form_field";
+/* Section */
+@import "sections/registration_form";
+/* Pages / Views */
+@import "pages/registration";
+

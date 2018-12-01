@@ -1,0 +1,208 @@
+/* HTML Elements */
+body {
+    background-color: $body-color;
+}
+
+h1 {
+    font-family: $fontRoboto;
+    font-size: $h1-size;
+    color: $grey;
+    font-weight: $weight500;
+}
+
+h2 {
+    font-family: $fontRoboto;
+    font-size: $h2-size;
+    color: $grey;
+    font-weight: $weight500;
+}
+
+h3 {
+    font-family: $fontRoboto;
+    font-size: $h3-size;
+    color: $grey;
+    font-weight: $weight500;
+}
+
+h4 {
+    font-family: $fontRoboto;
+    font-size: $h4-size;
+    color: $grey;
+    font-weight: $weight500;
+}
+
+h5 {
+    font-family: $fontRoboto;
+    font-size: $h5-size;
+    color: $grey;
+    font-weight: $weight700;
+}
+
+h6 {
+    font-family: $fontRoboto;
+    font-size: $h6-size;
+    color: $grey;
+    font-weight: $weight500;
+}
+
+p {
+    font-family: $fontRoboto;
+    font-size: $paragraph-size;
+    color: $dark;
+    font-weight: $weight300;
+}
+
+a {
+    font-family: $fontRoboto;
+    font-size: $link-large-size;
+    color: $blue-dark;
+    font-weight: $weight300;
+
+    &:hover {
+        color: $orange-light;
+    }
+
+    &.small-link {
+        font-size: $link-small-size;
+    }
+}
+
+li {
+    color: $dark;
+}
+
+/* GRID */
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.row {
+    box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.col-md-1 {
+    width: 8.33%;
+}
+
+.col-md-2 {
+    width: 16.66%;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-4 {
+    width: 33.33%;
+}
+
+.col-md-5 {
+    width: 41.66%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-7 {
+    width: 58.33%;
+}
+
+.col-md-8 {
+    width: 66.66%;
+}
+
+.col-md-9 {
+    width: 83.33%;
+}
+
+.col-md-10 {
+    width: 83.33%;
+}
+
+.col-md-11 {
+    width: 91.66%;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 83.33%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+/* Card Style */
+.card {
+    background-color: $white;
+    box-shadow: 0px 0px 16px 1px rgba(71, 71, 71, 0.10);
+
+    .card-header {
+        padding: 15px 15px;
+        margin: 0;
+        border-bottom: 1px solid $border-greylight;
+        h5 {
+            margin: 0;
+        }
+    }
+    .card-body {
+        padding: 15px;
+    }
+}

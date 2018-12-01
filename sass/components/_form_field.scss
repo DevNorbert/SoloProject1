@@ -1,0 +1,54 @@
+// Form Field Component
+.component--form-field .form-group {
+    margin: 15px 0;
+    max-width: 100%;
+
+    .form-control {
+        padding: 10px;
+        color: $dark;
+        border: 1px solid $border-greylight;
+        border-radius: 3px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: $grey-light;
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid $grey;
+            outline: none;
+        }
+    }
+    // Input password
+    .input-password {
+        position: relative;
+
+        &:hover,
+        &:focus {
+            .icon-password {
+                fill: $dark;
+            }
+        }
+
+        .form-control {
+            padding-left: 50px;
+        }
+
+        .icon-password {
+            position: absolute;
+            width: 30px;
+            left: 10px;
+            top: 10px;
+            fill: $grey;
+
+            &:hover,
+            &:focus {
+                fill: $dark;
+            }
+        }
+    }
+}
