@@ -1,0 +1,30 @@
+/* GENERAL GRAPH */
+.component--general-graph {
+    /* Graph info */
+    .general-graph-info-box {
+        @include border-bottom;
+        display: inline-block;
+        width: 90%;
+
+        .description {
+            float: left;
+
+            h5 {
+                margin: 10px 0;
+            }
+        }
+
+        .value {
+            float: right;
+
+            p {
+                font-size: 16px;
+                margin: 10px 0;
+            }
+        }
+    }
+    /* Graph */
+    .general-graph {
+        text-align: center;
+    }
+}

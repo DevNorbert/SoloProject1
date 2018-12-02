@@ -354,42 +354,42 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 42px;
-  color: #979797;
+  color: #a6a6a6;
   font-weight: 500;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
-  color: #979797;
+  color: #a6a6a6;
   font-weight: 500;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 21px;
-  color: #979797;
+  color: #a6a6a6;
   font-weight: 500;
 }
 
 h4 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #979797;
+  color: #a6a6a6;
   font-weight: 500;
 }
 
 h5 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #979797;
+  color: #a6a6a6;
   font-weight: 700;
 }
 
 h6 {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #979797;
+  color: #a6a6a6;
   font-weight: 500;
 }
 
@@ -424,6 +424,13 @@ li {
 .container {
   width: 100%;
   max-width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -543,6 +550,17 @@ li {
   margin: 20px 10px 20px 210px;
 }
 
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #e3e3e3;
+  margin-top: 30px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
 /* Card Style */
 .card {
   background-color: #ffffff;
@@ -555,8 +573,9 @@ li {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.card .card-header h5 {
+.card .card-header h4 {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .card .card-body {
@@ -585,7 +604,7 @@ li {
 }
 
 .component--form-field .form-group .form-control:hover, .component--form-field .form-group .form-control:focus {
-  border: 1px solid #979797;
+  border: 1px solid #a6a6a6;
   outline: none;
 }
 
@@ -606,7 +625,7 @@ li {
   width: 30px;
   left: 10px;
   top: 10px;
-  fill: #979797;
+  fill: #a6a6a6;
 }
 
 .component--form-field .form-group .input-password .icon-password:hover, .component--form-field .form-group .input-password .icon-password:focus {
@@ -695,6 +714,19 @@ li {
 .icon-logout {
   background-image: url(../../images/icons/icon-logout.png);
   width: 19px;
+  height: 15px;
+}
+
+/* Icon Calendar */
+.icon-calendar {
+  background-image: url(../../images/icons/icon-calendar.png);
+  width: 13px;
+  height: 13px;
+}
+
+.icon-refresh {
+  background-image: url(../../images/icons/icon-refresh.png);
+  width: 15px;
   height: 15px;
 }
 
@@ -868,6 +900,103 @@ li {
   text-decoration: none;
 }
 
-/* Pages / Views */
+/* Pages / Dashboard */
+/* DASHBOARD */
+/* GENERAL STATISTIC SECTION */
+/* Date Period */
+/* Date Period */
+.component--date-period {
+  text-align: center;
+}
+
+.component--date-period .date-period {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 370px;
+  padding: 10px;
+  color: #191919;
+  font-size: 14px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.component--date-period .date-period::placeholder {
+  color: #bababa;
+}
+
+.component--date-period .date-period:hover, .component--date-period .date-period:focus {
+  border: 1px solid #a6a6a6;
+  outline: none;
+}
+
+.component--date-period .date-period input {
+  border: 0;
+  outline: none;
+  width: 140px;
+}
+
+.component--date-period .date-period .date-period-first {
+  margin-right: 10px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.component--date-period .date-period .date-period-second {
+  margin-left: 10px;
+}
+
+.component--date-period .date-period .icon-calendar {
+  position: absolute;
+  top: 15px;
+}
+
+.component--date-period .btn-refresh {
+  background-color: #f58220;
+  display: inline-block;
+  width: 41px;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.component--date-period .btn-refresh span {
+  padding: 0;
+}
+
+/* General Graph */
+/* GENERAL GRAPH */
+.component--general-graph {
+  /* Graph info */
+  /* Graph */
+}
+
+.component--general-graph .general-graph-info-box {
+  border-bottom: 1px solid #e3e3e3;
+  display: inline-block;
+  width: 90%;
+}
+
+.component--general-graph .general-graph-info-box .description {
+  float: left;
+}
+
+.component--general-graph .general-graph-info-box .description h5 {
+  margin: 10px 0;
+}
+
+.component--general-graph .general-graph-info-box .value {
+  float: right;
+}
+
+.component--general-graph .general-graph-info-box .value p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.component--general-graph .general-graph {
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
