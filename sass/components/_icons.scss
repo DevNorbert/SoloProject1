@@ -1,9 +1,10 @@
 /* Icons */
 .icon {
-display: inline-block;
-padding-right: 10px;
-background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: 10px;
+    background-repeat: no-repeat;
 }
+
 /* Icon General */
 .icon-general {
     background-image: url(../../images/icons/icon-general.svg);
@@ -22,27 +23,79 @@ background-repeat: no-repeat;
     width: 16px;
     height: 10px;
 }
+
 /* Icon Banners */
 .icon-banners {
     background-image: url(../../images/icons/icon-banners.svg);
     width: 16px;
     height: 13px;
 }
+
 /* Icon Personal */
 .icon-personal {
     background-image: url(../../images/icons/icon-personal.svg);
     width: 16px;
     height: 13px;
 }
+
 /* Icon Payout */
 .icon-payout {
     background-image: url(../../images/icons/icon-payout.svg);
     width: 16px;
     height: 13px;
 }
+
 /* Icon Postback */
 .icon-postback {
     background-image: url(../../images/icons/icon-postback.svg);
     width: 16px;
     height: 14px;
+}
+/* Icon Wallter */ 
+.icon-wallet {
+    background-image: url(../../images/icons/icon-wallet.svg);
+    width: 17px;
+    height: 18px;
+}
+/* Icon Notifications */
+.icon-notifications {
+    background-image: url(../../images/icons/icon-notifications.png);
+    width: 16px;
+    height: 17px;
+} 
+/* Icon Profile */
+.icon-profile {
+    background-image: url(../../images/icons/icon-profile.png);
+    width: 17px;
+    height: 17px;
+}
+/* Icon Logout */
+.icon-logout {
+    background-image: url(../../images/icons/icon-logout.png);
+    width: 19px;
+    height: 15px;
+}
+/* Icon Active And Hover Item Sidebar */
+.sidebar-item.active, .sidebar-item:hover {
+    .icon-general {
+        background-image: url(../../images/icons/icon-general-white.svg);
+    }
+    .icon-details{
+        background-image: url(../../images/icons/icon-details-white.svg);
+    }
+    .icon-links {
+        background-image: url(../../images/icons/icon-links-white.svg);
+    }
+    .icon-banners {
+        background-image: url(../../images/icons/icon-banners-white.svg);
+    }
+    .icon-personal {
+        background-image: url(../../images/icons/icon-personal-white.svg);
+    }
+    .icon-payout {
+        background-image: url(../../images/icons/icon-payout-white.svg);
+    }
+    .icon-postback {
+        background-image: url(../../images/icons/icon-postback-white.svg);
+    }
 }

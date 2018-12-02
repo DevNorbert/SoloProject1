@@ -4,7 +4,7 @@
 	width="16px" height="15px" viewBox="0 0 16 15">
 	
 <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0" >
-<feFlood flood-color="rgb(129,129,129)" result="coFloodOut1"/>
+<feFlood flood-color="rgb(255,255,255)" result="coFloodOut1"/>
 <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
 <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
 </filter>

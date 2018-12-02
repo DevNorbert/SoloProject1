@@ -57,6 +57,7 @@ a {
     font-size: $link-large-size;
     color: $blue-dark;
     font-weight: $weight300;
+    text-decoration: none;
 
     &:hover {
         color: $orange-light;
@@ -188,7 +189,10 @@ li {
 .col-offset-11 {
     margin-left: 91.66%;
 }
-
+/* Content */
+.content {
+    margin: 20px 10px 20px 210px;
+}
 /* Card Style */
 .card {
     background-color: $white;

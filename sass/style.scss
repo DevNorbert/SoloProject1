@@ -6,16 +6,12 @@
 @import "normalize";
 /* Import Layout grid */
 @import "layout";
-/* Component Navbar */
-@import "components/navbar_top";
-/* Component Sidebar */
-@import "components/sidebar";
 /* Component Form Field */
 @import "components/form_field";
 /* Component Icons */
 @import "components/icons";
-/* Section */
-@import "sections/registration_form";
+/* Section Navigation */
+@import "sections/navigation";
 /* Pages / Views */
 @import "pages/registration";
 

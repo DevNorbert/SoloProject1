@@ -3,5 +3,11 @@
     border-#{$detail}: $width $style $color;
 }
 @mixin border-default {
-    border: 1px solid $grey;
+    border: 1px solid $border-greylight;
+}
+@mixin border-left {
+    border-left: 1px solid $border-greylight;
+}
+@mixin border-bottom {
+    border-bottom: 1px solid $border-greylight;
 }

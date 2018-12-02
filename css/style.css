@@ -367,7 +367,7 @@ h2 {
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   color: #979797;
   font-weight: 500;
 }
@@ -405,6 +405,7 @@ a {
   font-size: 16px;
   color: #56819f;
   font-weight: 300;
+  text-decoration: none;
 }
 
 a:hover {
@@ -412,7 +413,7 @@ a:hover {
 }
 
 a.small-link {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 li {
@@ -537,6 +538,11 @@ li {
   margin-left: 91.66%;
 }
 
+/* Content */
+.content {
+  margin: 20px 10px 20px 210px;
+}
+
 /* Card Style */
 .card {
   background-color: #ffffff;
@@ -555,100 +561,6 @@ li {
 
 .card .card-body {
   padding: 15px;
-}
-
-/* Component Navbar */
-/* Component Navbar Top */
-.component--navbar-top .navbar {
-  background-color: #ffffff;
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid #e3e3e3;
-}
-
-/* Component Sidebar */
-/* Sidebar Menu Left */
-.sidebar {
-  background-color: #191919;
-  height: 100vh;
-  width: 200px;
-  margin-top: -61px;
-}
-
-.sidebar .sidebar-top-section {
-  position: relative;
-}
-
-.sidebar .sidebar-top-section .sidebar-logo {
-  width: 150px;
-}
-
-.sidebar .sidebar-top-section .logo {
-  margin: 20px;
-}
-
-.sidebar .sidebar-top-section .sidebar-hamburger {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-}
-
-.sidebar .sidebar-menu .sidebar-item {
-  padding: 15px 10px;
-}
-
-.sidebar .sidebar-menu .sidebar-item .sidebar-link {
-  color: #999999;
-  text-decoration: none;
-  padding-left: 20px;
-}
-
-.sidebar .sidebar-menu .sidebar-item:hover {
-  background-color: #282828;
-  border-left: 5px solid #f58220;
-  padding-left: 5px;
-}
-
-.sidebar .sidebar-menu .sidebar-item:hover .sidebar-link {
-  color: #ffffff;
-}
-
-.sidebar .sidebar-menu .sidebar-separator {
-  width: 100%;
-  height: 1px;
-  background-color: #333333;
-  margin-top: 30px;
-}
-
-.sidebar .sidebar-menu .sidebar-manager h6 {
-  text-transform: uppercase;
-  margin-left: 30px;
-  margin-bottom: 15px;
-}
-
-.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details {
-  position: relative;
-}
-
-.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-image {
-  margin-left: 30px;
-  width: 60px;
-}
-
-.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-online img {
-  position: absolute;
-  top: 0px;
-  left: 62px;
-}
-
-.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name {
-  position: absolute;
-  top: 15px;
-  right: 40px;
-}
-
-.sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name a {
-  text-decoration: none;
 }
 
 /* Component Form Field */
@@ -758,7 +670,204 @@ li {
   height: 14px;
 }
 
-/* Section */
+/* Icon Wallter */
+.icon-wallet {
+  background-image: url(../../images/icons/icon-wallet.svg);
+  width: 17px;
+  height: 18px;
+}
+
+/* Icon Notifications */
+.icon-notifications {
+  background-image: url(../../images/icons/icon-notifications.png);
+  width: 16px;
+  height: 17px;
+}
+
+/* Icon Profile */
+.icon-profile {
+  background-image: url(../../images/icons/icon-profile.png);
+  width: 17px;
+  height: 17px;
+}
+
+/* Icon Logout */
+.icon-logout {
+  background-image: url(../../images/icons/icon-logout.png);
+  width: 19px;
+  height: 15px;
+}
+
+/* Icon Active And Hover Item Sidebar */
+.sidebar-item.active .icon-general, .sidebar-item:hover .icon-general {
+  background-image: url(../../images/icons/icon-general-white.svg);
+}
+
+.sidebar-item.active .icon-details, .sidebar-item:hover .icon-details {
+  background-image: url(../../images/icons/icon-details-white.svg);
+}
+
+.sidebar-item.active .icon-links, .sidebar-item:hover .icon-links {
+  background-image: url(../../images/icons/icon-links-white.svg);
+}
+
+.sidebar-item.active .icon-banners, .sidebar-item:hover .icon-banners {
+  background-image: url(../../images/icons/icon-banners-white.svg);
+}
+
+.sidebar-item.active .icon-personal, .sidebar-item:hover .icon-personal {
+  background-image: url(../../images/icons/icon-personal-white.svg);
+}
+
+.sidebar-item.active .icon-payout, .sidebar-item:hover .icon-payout {
+  background-image: url(../../images/icons/icon-payout-white.svg);
+}
+
+.sidebar-item.active .icon-postback, .sidebar-item:hover .icon-postback {
+  background-image: url(../../images/icons/icon-postback-white.svg);
+}
+
+/* Section Navigation */
+/* SECTION NAVIGATION */
+/* Component Navbar */
+/* Component Navbar Top */
+.component--navbar-top .navbar {
+  background-color: #ffffff;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  /* Navbar menu */
+}
+
+.component--navbar-top .navbar .navbar-menu {
+  margin: 0;
+  float: right;
+  /* Notifications Navbar Item */
+  /* Logout Navbar Item */
+}
+
+.component--navbar-top .navbar .navbar-menu .navbar-item {
+  display: inline-block;
+  border-left: 1px solid #e3e3e3;
+  padding: 18px 20px;
+}
+
+.component--navbar-top .navbar .navbar-menu .navbar-item span {
+  display: inline-block;
+}
+
+.component--navbar-top .navbar .navbar-menu .navbar-item h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.component--navbar-top .navbar .navbar-menu .notifications {
+  position: relative;
+  padding-right: 10px;
+}
+
+.component--navbar-top .navbar .navbar-menu .notifications span {
+  cursor: pointer;
+}
+
+.component--navbar-top .navbar .navbar-menu .notifications .notifications-alert {
+  position: absolute;
+  display: inline-block;
+  top: 7px;
+  left: 28px;
+}
+
+.component--navbar-top .navbar .navbar-menu .logout span {
+  cursor: pointer;
+}
+
+/* Component Sidebar */
+/* Sidebar Menu Left */
+.component--sidebar {
+  background-color: #191919;
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  width: 200px;
+}
+
+.component--sidebar .sidebar-top-section {
+  position: relative;
+}
+
+.component--sidebar .sidebar-top-section .sidebar-logo {
+  width: 150px;
+}
+
+.component--sidebar .sidebar-top-section .logo {
+  margin: 20px;
+}
+
+.component--sidebar .sidebar-top-section .sidebar-hamburger {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-item {
+  padding: 15px 10px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-item .sidebar-link {
+  color: #999999;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-item:hover, .component--sidebar .sidebar-menu .sidebar-item.active {
+  background-color: #282828;
+  border-left: 5px solid #f58220;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.component--sidebar .sidebar-menu .sidebar-item:hover .sidebar-link, .component--sidebar .sidebar-menu .sidebar-item.active .sidebar-link {
+  color: #ffffff;
+}
+
+.component--sidebar .sidebar-menu .sidebar-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  margin-top: 30px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-manager h6 {
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details {
+  position: relative;
+}
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-image {
+  margin-left: 30px;
+  width: 60px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-online img {
+  position: absolute;
+  top: 0px;
+  left: 62px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+}
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name a {
+  text-decoration: none;
+}
+
 /* Pages / Views */
 
 /*# sourceMappingURL=style.css.map */

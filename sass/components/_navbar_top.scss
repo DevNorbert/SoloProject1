@@ -1,7 +1,51 @@
 /* Component Navbar Top */
-.component--navbar-top .navbar{
+.component--navbar-top .navbar {
     background-color: $white;
     height: 60px;
     width: 100%;
-    @include border('bottom', 1px, solid, $border-greylight);
+    @include border-bottom;
+
+    /* Navbar menu */
+    .navbar-menu {
+        margin: 0;
+        float: right;
+
+        .navbar-item {
+            display: inline-block;
+            @include border-left;
+            padding: 18px 20px;
+
+            span {
+                display: inline-block;
+            }
+
+            h3 {
+                display: inline-block;
+                margin: 0;
+            }
+        }
+
+        /* Notifications Navbar Item */
+        .notifications {
+            position: relative;
+            padding-right: 10px;
+
+            span {
+                cursor: pointer;
+            }
+
+            .notifications-alert {
+                position: absolute;
+                display: inline-block;
+                top: 7px;
+                left: 28px;
+            }
+        }
+
+        /* Logout Navbar Item */
+        .logout span {
+            cursor: pointer;
+        }
+    }
+
 }
