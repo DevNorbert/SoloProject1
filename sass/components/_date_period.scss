@@ -47,12 +47,9 @@
 
     .btn-refresh {
         background-color: $orange;
-        display: inline-block;
         width: 41px;
         height: 40px;
-        border: 0;
-        border-radius: 3px;
-        cursor: pointer;
+        padding: 0;
 
         span {
             padding: 0;

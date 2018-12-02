@@ -1,0 +1,51 @@
+/* Links Section */
+.section--links {
+    .add-new-link {
+        text-align: center;
+    }
+
+    .links-list .link-box {
+        width: 100%;
+        @include border-bottom;
+        padding: 10px;
+        &:first-of-type {
+            @include border-top;
+            margin-top: 20px;
+        }
+
+        &:hover {
+            background-color: $blue-light;
+            transition-duration: 0.3s;
+        }
+
+        .description {
+            display: inline-block;
+            width: 250px;
+            h5 {
+                float: left;
+            }
+        }
+
+        .link {
+            display: inline-block;
+            margin-left: 25%;
+            a {
+                float: right;
+                padding: 10px
+            }
+        }
+
+        .icons {
+            display: none;
+            float: right;
+            margin: 10px 50px 10px 0;
+        }
+
+        &:hover {
+            .icons {
+                display: inline-block;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}

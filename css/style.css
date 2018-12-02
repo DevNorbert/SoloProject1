@@ -384,6 +384,7 @@ h5 {
   font-size: 16px;
   color: #a6a6a6;
   font-weight: 700;
+  margin: 10px;
 }
 
 h6 {
@@ -561,6 +562,22 @@ li {
   max-width: 100%;
 }
 
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.btn-orange {
+  background-color: #f58220;
+}
+
 /* Card Style */
 .card {
   background-color: #ffffff;
@@ -579,7 +596,7 @@ li {
 }
 
 .card .card-body {
-  padding: 15px;
+  padding: 15px 0;
 }
 
 /* Component Form Field */
@@ -724,9 +741,24 @@ li {
   height: 13px;
 }
 
+/* Icon Refresh */
 .icon-refresh {
   background-image: url(../../images/icons/icon-refresh.png);
   width: 15px;
+  height: 15px;
+}
+
+/* Icon Link Orange */
+.icon-link-orange {
+  background-image: url(../../images/icons/icon-link-orange.png);
+  width: 16px;
+  height: 8px;
+}
+
+/* Icon Delete */
+.icon-delete {
+  background-image: url(../../images/icons/icon-delete.png);
+  width: 14px;
   height: 15px;
 }
 
@@ -902,6 +934,7 @@ li {
 
 /* Pages / Dashboard */
 /* DASHBOARD */
+/* General Statistic */
 /* GENERAL STATISTIC SECTION */
 /* Date Period */
 /* Date Period */
@@ -953,12 +986,9 @@ li {
 
 .component--date-period .btn-refresh {
   background-color: #f58220;
-  display: inline-block;
   width: 41px;
   height: 40px;
-  border: 0;
-  border-radius: 3px;
-  cursor: pointer;
+  padding: 0;
 }
 
 .component--date-period .btn-refresh span {
@@ -997,6 +1027,58 @@ li {
 
 .component--general-graph .general-graph {
   text-align: center;
+}
+
+/* Links */
+/* Links Section */
+.section--links .add-new-link {
+  text-align: center;
+}
+
+.section--links .links-list .link-box {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.section--links .links-list .link-box:first-of-type {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 20px;
+}
+
+.section--links .links-list .link-box:hover {
+  background-color: rgba(177, 191, 191, 0.18);
+  transition-duration: 0.3s;
+}
+
+.section--links .links-list .link-box .description {
+  display: inline-block;
+  width: 250px;
+}
+
+.section--links .links-list .link-box .description h5 {
+  float: left;
+}
+
+.section--links .links-list .link-box .link {
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.section--links .links-list .link-box .link a {
+  float: right;
+  padding: 10px;
+}
+
+.section--links .links-list .link-box .icons {
+  display: none;
+  float: right;
+  margin: 10px 50px 10px 0;
+}
+
+.section--links .links-list .link-box:hover .icons {
+  display: inline-block;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

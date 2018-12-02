@@ -11,6 +11,9 @@
 @mixin border-right {
     border-right: 1px solid $border-greylight;
 }
+@mixin border-top {
+    border-top: 1px solid $border-greylight;
+}
 @mixin border-bottom {
     border-bottom: 1px solid $border-greylight;
 }
