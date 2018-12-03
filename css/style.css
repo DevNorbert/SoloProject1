@@ -548,7 +548,7 @@ li {
 
 /* Content */
 .content {
-  margin: 20px 10px 20px 210px;
+  margin: 80px 10px 20px 210px;
 }
 
 .separator {
@@ -708,7 +708,7 @@ li {
 
 /* Icon Wallter */
 .icon-wallet {
-  background-image: url(/images/icons/icon-wallet.svg);
+  background-image: url(/images/icons/icon-wallet.png);
   width: 17px;
   height: 18px;
 }
@@ -796,9 +796,12 @@ li {
 /* Component Navbar */
 /* Component Navbar Top */
 .component--navbar-top .navbar {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   height: 60px;
   width: 100%;
+  z-index: 1;
   border-bottom: 1px solid #e3e3e3;
   /* Navbar menu */
 }
@@ -853,6 +856,7 @@ li {
   top: 0px;
   height: 100vh;
   width: 200px;
+  z-index: 2;
 }
 
 .component--sidebar .sidebar-top-section {
@@ -887,11 +891,11 @@ li {
   background-color: #282828;
   border-left: 5px solid #f58220;
   padding-left: 5px;
-  cursor: pointer;
 }
 
 .component--sidebar .sidebar-menu .sidebar-item:hover .sidebar-link, .component--sidebar .sidebar-menu .sidebar-item.active .sidebar-link {
   color: #ffffff;
+  cursor: pointer;
 }
 
 .component--sidebar .sidebar-menu .sidebar-separator {
@@ -930,6 +934,62 @@ li {
 
 .component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name a {
   text-decoration: none;
+}
+
+/* Section Links */
+/* Links Section */
+.section--links .add-new-link {
+  text-align: center;
+}
+
+.section--links .links-list .link-box {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.section--links .links-list .link-box:first-of-type {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 20px;
+}
+
+.section--links .links-list .link-box:hover {
+  background-color: rgba(177, 191, 191, 0.18);
+  transition-duration: 0.3s;
+}
+
+.section--links .links-list .link-box .description {
+  display: inline-block;
+  width: 250px;
+}
+
+.section--links .links-list .link-box .description h5 {
+  float: left;
+}
+
+.section--links .links-list .link-box .link {
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.section--links .links-list .link-box .link a {
+  float: right;
+  padding: 10px;
+}
+
+.section--links .links-list .link-box .icons {
+  display: none;
+  float: right;
+  margin: 10px 50px 10px 0;
+}
+
+.section--links .links-list .link-box:hover .icons {
+  display: inline-block;
+  transition-duration: 0.5s;
+}
+
+.section--links .links-list .link-box:hover .icons .icon {
+  cursor: pointer;
 }
 
 /* Pages / Dashboard */
@@ -1027,58 +1087,6 @@ li {
 
 .component--general-graph .general-graph {
   text-align: center;
-}
-
-/* Links */
-/* Links Section */
-.section--links .add-new-link {
-  text-align: center;
-}
-
-.section--links .links-list .link-box {
-  width: 100%;
-  border-bottom: 1px solid #e3e3e3;
-  padding: 10px;
-}
-
-.section--links .links-list .link-box:first-of-type {
-  border-top: 1px solid #e3e3e3;
-  margin-top: 20px;
-}
-
-.section--links .links-list .link-box:hover {
-  background-color: rgba(177, 191, 191, 0.18);
-  transition-duration: 0.3s;
-}
-
-.section--links .links-list .link-box .description {
-  display: inline-block;
-  width: 250px;
-}
-
-.section--links .links-list .link-box .description h5 {
-  float: left;
-}
-
-.section--links .links-list .link-box .link {
-  display: inline-block;
-  margin-left: 25%;
-}
-
-.section--links .links-list .link-box .link a {
-  float: right;
-  padding: 10px;
-}
-
-.section--links .links-list .link-box .icons {
-  display: none;
-  float: right;
-  margin: 10px 50px 10px 0;
-}
-
-.section--links .links-list .link-box:hover .icons {
-  display: inline-block;
-  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

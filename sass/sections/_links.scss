@@ -45,6 +45,9 @@
             .icons {
                 display: inline-block;
                 transition-duration: 0.5s;
+                .icon {
+                    cursor: pointer;
+                }
             }
         }
     }
