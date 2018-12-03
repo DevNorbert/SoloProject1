@@ -659,136 +659,136 @@ li {
 
 /* Icon General */
 .icon-general {
-  background-image: url(../../images/icons/icon-general.svg);
+  background-image: url(/images/icons/icon-general.svg);
   width: 16px;
   height: 15px;
 }
 
 /* Icon Details */
 .icon-details {
-  background-image: url(../../images/icons/icon-details.svg);
+  background-image: url(/images/icons/icon-details.svg);
   width: 16px;
   height: 13px;
 }
 
 /* Icon Links */
 .icon-links {
-  background-image: url(../../images/icons/icon-links.svg);
+  background-image: url(/images/icons/icon-links.svg);
   width: 16px;
   height: 10px;
 }
 
 /* Icon Banners */
 .icon-banners {
-  background-image: url(../../images/icons/icon-banners.svg);
+  background-image: url(/images/icons/icon-banners.svg);
   width: 16px;
   height: 13px;
 }
 
 /* Icon Personal */
 .icon-personal {
-  background-image: url(../../images/icons/icon-personal.svg);
+  background-image: url(/images/icons/icon-personal.svg);
   width: 16px;
   height: 13px;
 }
 
 /* Icon Payout */
 .icon-payout {
-  background-image: url(../../images/icons/icon-payout.svg);
+  background-image: url(/images/icons/icon-payout.svg);
   width: 16px;
   height: 13px;
 }
 
 /* Icon Postback */
 .icon-postback {
-  background-image: url(../../images/icons/icon-postback.svg);
+  background-image: url(/images/icons/icon-postback.svg);
   width: 16px;
   height: 14px;
 }
 
 /* Icon Wallter */
 .icon-wallet {
-  background-image: url(../../images/icons/icon-wallet.svg);
+  background-image: url(/images/icons/icon-wallet.svg);
   width: 17px;
   height: 18px;
 }
 
 /* Icon Notifications */
 .icon-notifications {
-  background-image: url(../../images/icons/icon-notifications.png);
+  background-image: url(/images/icons/icon-notifications.png);
   width: 16px;
   height: 17px;
 }
 
 /* Icon Profile */
 .icon-profile {
-  background-image: url(../../images/icons/icon-profile.png);
+  background-image: url(/images/icons/icon-profile.png);
   width: 17px;
   height: 17px;
 }
 
 /* Icon Logout */
 .icon-logout {
-  background-image: url(../../images/icons/icon-logout.png);
+  background-image: url(/images/icons/icon-logout.png);
   width: 19px;
   height: 15px;
 }
 
 /* Icon Calendar */
 .icon-calendar {
-  background-image: url(../../images/icons/icon-calendar.png);
+  background-image: url(/images/icons/icon-calendar.png);
   width: 13px;
   height: 13px;
 }
 
 /* Icon Refresh */
 .icon-refresh {
-  background-image: url(../../images/icons/icon-refresh.png);
+  background-image: url(/images/icons/icon-refresh.png);
   width: 15px;
   height: 15px;
 }
 
 /* Icon Link Orange */
 .icon-link-orange {
-  background-image: url(../../images/icons/icon-link-orange.png);
+  background-image: url(/images/icons/icon-link-orange.png);
   width: 16px;
   height: 8px;
 }
 
 /* Icon Delete */
 .icon-delete {
-  background-image: url(../../images/icons/icon-delete.png);
+  background-image: url(/images/icons/icon-delete.png);
   width: 14px;
   height: 15px;
 }
 
 /* Icon Active And Hover Item Sidebar */
 .sidebar-item.active .icon-general, .sidebar-item:hover .icon-general {
-  background-image: url(../../images/icons/icon-general-white.svg);
+  background-image: url(/images/icons/icon-general-white.svg);
 }
 
 .sidebar-item.active .icon-details, .sidebar-item:hover .icon-details {
-  background-image: url(../../images/icons/icon-details-white.svg);
+  background-image: url(/images/icons/icon-details-white.svg);
 }
 
 .sidebar-item.active .icon-links, .sidebar-item:hover .icon-links {
-  background-image: url(../../images/icons/icon-links-white.svg);
+  background-image: url(/images/icons/icon-links-white.svg);
 }
 
 .sidebar-item.active .icon-banners, .sidebar-item:hover .icon-banners {
-  background-image: url(../../images/icons/icon-banners-white.svg);
+  background-image: url(/images/icons/icon-banners-white.svg);
 }
 
 .sidebar-item.active .icon-personal, .sidebar-item:hover .icon-personal {
-  background-image: url(../../images/icons/icon-personal-white.svg);
+  background-image: url(/images/icons/icon-personal-white.svg);
 }
 
 .sidebar-item.active .icon-payout, .sidebar-item:hover .icon-payout {
-  background-image: url(../../images/icons/icon-payout-white.svg);
+  background-image: url(/images/icons/icon-payout-white.svg);
 }
 
 .sidebar-item.active .icon-postback, .sidebar-item:hover .icon-postback {
-  background-image: url(../../images/icons/icon-postback-white.svg);
+  background-image: url(/images/icons/icon-postback-white.svg);
 }
 
 /* Section Navigation */
