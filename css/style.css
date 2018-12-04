@@ -551,6 +551,10 @@ li {
   margin: 80px 10px 20px 210px;
 }
 
+.content.content-fullwidth {
+  margin: 80px 10px 20px 10px;
+}
+
 .separator {
   width: 100%;
   height: 1px;
@@ -560,6 +564,14 @@ li {
 
 .img-responsive {
   max-width: 100%;
+}
+
+.display-mobile {
+  display: none;
+}
+
+.display-desktop {
+  display: block;
 }
 
 /* Buttons */
@@ -572,6 +584,10 @@ li {
   font-weight: 300;
   color: #ffffff;
   font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #333333;
 }
 
 .btn-orange {
@@ -854,9 +870,15 @@ li {
   background-color: #191919;
   position: fixed;
   top: 0px;
-  height: 100vh;
+  height: 100%;
   width: 200px;
   z-index: 2;
+  display: block;
+  overflow-y: auto;
+}
+
+.component--sidebar.sidebar-hidden {
+  display: none;
 }
 
 .component--sidebar .sidebar-top-section {
@@ -875,6 +897,7 @@ li {
   position: absolute;
   top: 25px;
   right: 20px;
+  cursor: pointer;
 }
 
 .component--sidebar .sidebar-menu .sidebar-item {
@@ -934,6 +957,19 @@ li {
 
 .component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name a {
   text-decoration: none;
+}
+
+/* Sidebar show */
+.sidebar-button {
+  display: inline-block;
+  position: relative;
+}
+
+.sidebar-button .sidebar-hamburger {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  cursor: pointer;
 }
 
 /* Section Links */
@@ -1045,7 +1081,6 @@ li {
 }
 
 .component--date-period .btn-refresh {
-  background-color: #f58220;
   width: 41px;
   height: 40px;
   padding: 0;
@@ -1087,6 +1122,129 @@ li {
 
 .component--general-graph .general-graph {
   text-align: center;
+}
+
+/* Resposive Style */
+/* RESPONSIVE */
+/* Small Device */
+@media (max-width: 767px) {
+  .display-mobile {
+    display: block;
+  }
+  .display-desktop {
+    display: none;
+  }
+  .col-sm-1 {
+    width: 8.33%;
+  }
+  .col-sm-2 {
+    width: 16.66%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-5 {
+    width: 41.66%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33%;
+  }
+  .col-sm-8 {
+    width: 66.66%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.33%;
+  }
+  .col-sm-11 {
+    width: 91.66%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 83.33%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66%;
+  }
+  .content {
+    margin: 80px 10px 20px 10px;
+  }
+  .component--sidebar .notifications {
+    position: relative;
+  }
+  .component--sidebar .notifications .notifications-alert {
+    position: absolute;
+    top: -8px;
+    left: 29px;
+  }
+  .component--date-period .date-period .date-period-first {
+    margin-right: 0;
+  }
+  .component--date-period .date-period input {
+    width: 130px;
+  }
+  .component--date-period .date-period .icon-calendar {
+    right: 10px;
+  }
+  .component--date-period .btn {
+    margin-top: 10px;
+  }
+  .section--links .links-list .link-box {
+    padding: 0;
+  }
+  .section--links .links-list .link-box .link {
+    margin-left: 0;
+  }
+  .section--links .links-list .link-box .icons {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section--links .links-list .link-box .link {
+    display: inline-block;
+    margin-left: 15%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

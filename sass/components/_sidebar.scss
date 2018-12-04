@@ -3,9 +3,14 @@
     background-color: $dark;
     position: fixed;
     top: 0px;
-    height: 100vh;
+    height: 100%;
     width: 200px;
     z-index: 2;
+    display: block;
+    overflow-y: auto;
+    &.sidebar-hidden {
+        display: none;
+    }
 
     // Sidebar top section
     .sidebar-top-section {
@@ -23,6 +28,7 @@
             position: absolute;
             top: 25px;
             right: 20px;
+            cursor: pointer;
         }
     }
 
@@ -91,5 +97,18 @@
             }
 
         }
+    }
+}
+
+/* Sidebar show */
+.sidebar-button {
+    display: inline-block;
+    position: relative;
+
+    .sidebar-hamburger {
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        cursor: pointer;
     }
 }

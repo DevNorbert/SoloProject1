@@ -15,7 +15,12 @@
     <!-- Navbar Top Menu -->
     <div class="component--navbar-top">
         <div class="navbar">
-            <ul class="navbar-menu">
+            <div class="sidebar-button">
+                <div class="sidebar-hamburger" id="navbar-hamburger">
+                    <img src="images/icons/hamburger.svg" alt="Hamburger menu">
+                </div>
+            </div>
+            <ul class="navbar-menu display-desktop">
                 <li class="navbar-item balance">
                     <span class="icon icon-wallet"></span>
                     <h3>$1,500,00</h3>
@@ -37,7 +42,7 @@
         </div>
     </div>
     <!-- Sidebar Left -->
-    <div class="component--sidebar">
+    <div class="component--sidebar sidebar-hidden" id="sidebar">
         <!-- Sidebar top section-->
         <div class="sidebar-top-section">
             <div class="sidebar-logo">
@@ -45,10 +50,8 @@
                     <img class="logo" src="images/logo.png" alt="Logo">
                 </a>
             </div>
-            <div class="sidebar-hamburger">
-                <a href="">
-                    <img src="images/icons/hamburger.svg" alt="Hamburger menu">
-                </a>
+            <div class="sidebar-hamburger" id="sidebar-hamburger">
+                <img src="images/icons/hamburger.svg" alt="Hamburger menu">
             </div>
         </div>
         <!-- Sidebar menu -->
@@ -89,11 +92,33 @@
                     </div>
                 </div>
             </div>
+            <div class="display-mobile">
+                <div class="sidebar-separator"></div>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-wallet"></span>$1,500,00</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="notifications">
+                            <a href="#" class="sidebar-link"><span class="icon icon-notifications"></span>Notifications</a>
+                            <div class="notifications-alert">
+                                    <img src="images/icons/icon-orange.png" alt="notifications alert">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-profile"></span>Leonardo Dicaprio</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-logout"></span>Logout</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
     <!-- Content Site -->
-    <div class="content">
+    <div class="content" id="content">
         <div class="dashboard">
             <!-- General Statistic -->
             <div class="general-statistic">
@@ -117,7 +142,7 @@
                                                     <input type="date" class="date-period-second" value="2016-05-16">
                                                     <span class="icon icon-calendar"></span>
                                                 </div>
-                                                <button class="btn btn-refresh"><span class="icon icon-refresh"></span></button>
+                                                <button class="btn btn-orange btn-refresh"><span class="icon icon-refresh"></span></button>
                                             </div>
                                         </div>
                                     </div>
@@ -129,7 +154,7 @@
                                                 <!-- Graph info -->
                                                 <div class="general-graph-info">
                                                     <div class="row">
-                                                        <div class="col-md-3 col-offset-3">
+                                                        <div class="col-md-3 col-sm-8 col-offset-3 col-sm-offset-2">
                                                             <div class="general-graph-info-box">
                                                                 <div class="description">
                                                                     <h5>Visit Signups</h5>
@@ -139,7 +164,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-3">
+                                                        <div class="col-md-3 col-sm-8 col-sm-offset-2">
                                                             <div class="general-graph-info-box">
                                                                 <div class="description">
                                                                     <h5>Net deposit</h5>
@@ -150,7 +175,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="row">
-                                                            <div class="col-md-3 col-offset-3">
+                                                            <div class="col-md-3 col-sm-8 col-offset-3 col-sm-offset-2">
                                                                 <div class="general-graph-info-box">
                                                                     <div class="description">
                                                                         <h5>Visit Signups</h5>
@@ -160,7 +185,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-3 col-sm-8 col-sm-offset-2">
                                                                 <div class="general-graph-info-box">
                                                                     <div class="description">
                                                                         <h5>Net deposit</h5>
@@ -176,7 +201,7 @@
                                                 <!-- Graph Legend-->
                                                 <div class="general-graph-legend">
                                                     <div class="row">
-                                                        <div class="col-md-3 col-offset-3">
+                                                        <div class="col-md-3 col-sm-8 col-offset-3 col-sm-offset-2">
                                                             <h5>Earnings chart</h5>
                                                         </div>
                                                     </div>
@@ -220,7 +245,7 @@
                                         </div>
                                         <!-- Links list -->
                                         <div class="row">
-                                            <div class="col-md-8 col-offset-2">
+                                            <div class="col-md-8 col-sm-12 col-offset-2 col-sm-offset-0">
                                                 <div class="links-list">
                                                     <div class="link-box">
                                                         <div class="description">
@@ -364,6 +389,8 @@
             <!-- End Links -->
         </div>
     </div>
+    <!-- Scripts JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

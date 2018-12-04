@@ -198,6 +198,9 @@ li {
 /* Content */
 .content {
     margin: 80px 10px 20px 210px;
+    &.content-fullwidth {
+        margin: 80px 10px 20px 10px;
+    }
 }
 .separator {
     width: 100%;
@@ -207,6 +210,12 @@ li {
 }
 .img-responsive {
     max-width: 100%;
+}
+.display-mobile {
+    display: none;
+}
+.display-desktop {
+    display: block;
 }
 /* Buttons */
 .btn {
@@ -218,6 +227,9 @@ li {
     font-weight: 300;
     color: $white;
     font-size: 18px;
+    &:hover {
+        background-color: $dark-light;
+    }
 }
 .btn-orange {
     background-color: $orange;
