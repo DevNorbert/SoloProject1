@@ -14,6 +14,7 @@
     "build:clean": "rimraf css/*",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css -o css/style.css",
+    "build:dist": "copyfiles *.html ./css/*.css ./js/*.js ./images/* ./images/**/* ./dist",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:sassprefixer": "onchange -d 100 sass/*.scss sass/*/*.scss -- npm run build-dev:sass -- npm run build:autoprefixer",
@@ -35,6 +36,7 @@
     "onchange": "^5.1.0"
   },
   "dependencies": {
+    "minifier": "^0.8.1",
     "mkdirp": "^0.5.1",
     "normalize.css": "^8.0.1",
     "rimraf": "^2.6.2"
