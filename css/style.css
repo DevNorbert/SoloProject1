@@ -1,0 +1,486 @@
+/* Import Variables */
+/* Colors */
+/* Fonts */
+/* Size */
+/* Border */
+/* Import Mixins */
+/* Border mixins */
+/* Import Normalize css reset */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document ========================================================================== */
+/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers. */
+body { margin: 0; }
+
+/** Render the `main` element consistently in IE. */
+main { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** Remove the gray background on active links in IE 10. */
+a { background-color: transparent; }
+
+/** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Remove the border on images inside links in IE 10. */
+img { border-style: none; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */ text-transform: none; }
+
+/** Correct the inability to style clickable types in iOS and Safari. */
+button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+
+/** Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Correct the padding in Firefox. */
+fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress { vertical-align: baseline; }
+
+/** Remove the default vertical scrollbar in IE 10+. */
+textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in Edge, IE 10+, and Firefox. */
+details { display: block; }
+
+/* Add the correct display in all browsers. */
+summary { display: list-item; }
+
+/* Misc ========================================================================== */
+/** Add the correct display in IE 10+. */
+template { display: none; }
+
+/** Add the correct display in IE 10. */
+[hidden] { display: none; }
+
+/* Import Layout grid */
+/* HTML Elements */
+body { background-color: #f5f5f2; }
+
+h1 { font-family: "Roboto", sans-serif; font-size: 42px; color: #a6a6a6; font-weight: 500; margin: 10px; }
+
+h2 { font-family: "Roboto", sans-serif; font-size: 28px; color: #a6a6a6; font-weight: 500; margin: 10px; }
+
+h3 { font-family: "Roboto", sans-serif; font-size: 21px; color: #a6a6a6; font-weight: 500; margin: 10px; }
+
+h4 { font-family: "Roboto", sans-serif; font-size: 18px; color: #a6a6a6; font-weight: 500; margin: 10px; }
+
+h5 { font-family: "Roboto", sans-serif; font-size: 16px; color: #a6a6a6; font-weight: 700; margin: 10px; }
+
+h6 { font-family: "Roboto", sans-serif; font-size: 14px; color: #a6a6a6; font-weight: 500; margin: 10px; }
+
+p { font-family: "Roboto", sans-serif; font-size: 14px; color: #191919; font-weight: 300; }
+
+a { font-family: "Roboto", sans-serif; font-size: 16px; color: #56819f; font-weight: 300; text-decoration: none; }
+
+a:hover { color: #ffa200; }
+
+a.small-link { font-size: 14px; }
+
+li { color: #191919; }
+
+/* GRID */
+.container { width: 100%; max-width: 1170px; margin: 0 auto; box-sizing: border-box; }
+
+.container-fluid { width: 100%; max-width: 100%; margin: 0 auto; box-sizing: border-box; }
+
+.row { box-sizing: border-box; }
+
+.row::before, .row::after { content: ""; display: table; clear: both; }
+
+[class*="col-"] { float: left; min-height: 1px; padding: 10px; box-sizing: border-box; }
+
+.col-md-1 { width: 8.33%; }
+
+.col-md-2 { width: 16.66%; }
+
+.col-md-3 { width: 25%; }
+
+.col-md-4 { width: 33.33%; }
+
+.col-md-5 { width: 41.66%; }
+
+.col-md-6 { width: 50%; }
+
+.col-md-7 { width: 58.33%; }
+
+.col-md-8 { width: 66.66%; }
+
+.col-md-9 { width: 83.33%; }
+
+.col-md-10 { width: 83.33%; }
+
+.col-md-11 { width: 91.66%; }
+
+.col-md-12 { width: 100%; }
+
+.col-offset-1 { margin-left: 8.33%; }
+
+.col-offset-2 { margin-left: 16.66%; }
+
+.col-offset-3 { margin-left: 25%; }
+
+.col-offset-4 { margin-left: 33.33%; }
+
+.col-offset-5 { margin-left: 41.66%; }
+
+.col-offset-6 { margin-left: 50%; }
+
+.col-offset-7 { margin-left: 58.33%; }
+
+.col-offset-8 { margin-left: 66.66%; }
+
+.col-offset-9 { margin-left: 83.33%; }
+
+.col-offset-10 { margin-left: 83.33%; }
+
+.col-offset-11 { margin-left: 91.66%; }
+
+/* Content */
+.content { margin: 80px 10px 20px 210px; }
+
+.content.content-fullwidth { margin: 80px 10px 20px 10px; }
+
+.separator { width: 100%; height: 1px; background-color: #e3e3e3; margin-top: 30px; }
+
+.img-responsive { max-width: 100%; }
+
+.display-mobile { display: none; }
+
+.display-desktop { display: block; }
+
+/* Buttons */
+.btn { display: inline-block; border: 0; border-radius: 3px; cursor: pointer; padding: 10px 20px; font-weight: 300; color: #ffffff; font-size: 18px; }
+
+.btn:hover { background-color: #333333; }
+
+.btn-orange { background-color: #f58220; }
+
+/* Card Style */
+.card { background-color: #ffffff; box-shadow: 0px 0px 16px 1px rgba(71, 71, 71, 0.1); }
+
+.card .card-header { padding: 15px 15px; margin: 0; border-bottom: 1px solid #e3e3e3; }
+
+.card .card-header h4 { margin: 0; text-transform: uppercase; }
+
+.card .card-body { padding: 15px 0; }
+
+/* Component Form Field */
+.component--form-field .form-group { margin: 15px 0; max-width: 100%; }
+
+.component--form-field .form-group .form-control { padding: 10px; color: #191919; border: 1px solid #e3e3e3; border-radius: 3px; width: 100%; max-width: 100%; margin: 0 auto; box-sizing: border-box; }
+
+.component--form-field .form-group .form-control:-ms-input-placeholder { color: #bababa; }
+
+.component--form-field .form-group .form-control::placeholder { color: #bababa; }
+
+.component--form-field .form-group .form-control:hover, .component--form-field .form-group .form-control:focus { border: 1px solid #a6a6a6; outline: none; }
+
+.component--form-field .form-group .input-password { position: relative; }
+
+.component--form-field .form-group .input-password:hover .icon-password, .component--form-field .form-group .input-password:focus .icon-password { fill: #191919; }
+
+.component--form-field .form-group .input-password .form-control { padding-left: 50px; }
+
+.component--form-field .form-group .input-password .icon-password { position: absolute; width: 30px; left: 10px; top: 10px; fill: #a6a6a6; }
+
+.component--form-field .form-group .input-password .icon-password:hover, .component--form-field .form-group .input-password .icon-password:focus { fill: #191919; }
+
+/* Component Icons */
+/* Icons */
+.icon { display: inline-block; padding-right: 10px; background-repeat: no-repeat; }
+
+/* Icon General */
+.icon-general { background-image: url(/images/icons/icon-general.svg); width: 16px; height: 15px; }
+
+/* Icon Details */
+.icon-details { background-image: url(/images/icons/icon-details.svg); width: 16px; height: 13px; }
+
+/* Icon Links */
+.icon-links { background-image: url(/images/icons/icon-links.svg); width: 16px; height: 10px; }
+
+/* Icon Banners */
+.icon-banners { background-image: url(/images/icons/icon-banners.svg); width: 16px; height: 13px; }
+
+/* Icon Personal */
+.icon-personal { background-image: url(/images/icons/icon-personal.svg); width: 16px; height: 13px; }
+
+/* Icon Payout */
+.icon-payout { background-image: url(/images/icons/icon-payout.svg); width: 16px; height: 13px; }
+
+/* Icon Postback */
+.icon-postback { background-image: url(/images/icons/icon-postback.svg); width: 16px; height: 14px; }
+
+/* Icon Wallter */
+.icon-wallet { background-image: url(/images/icons/icon-wallet.png); width: 17px; height: 18px; }
+
+/* Icon Notifications */
+.icon-notifications { background-image: url(/images/icons/icon-notifications.png); width: 16px; height: 17px; }
+
+/* Icon Profile */
+.icon-profile { background-image: url(/images/icons/icon-profile.png); width: 17px; height: 17px; }
+
+/* Icon Logout */
+.icon-logout { background-image: url(/images/icons/icon-logout.png); width: 19px; height: 15px; }
+
+/* Icon Calendar */
+.icon-calendar { background-image: url(/images/icons/icon-calendar.png); width: 13px; height: 13px; }
+
+/* Icon Refresh */
+.icon-refresh { background-image: url(/images/icons/icon-refresh.png); width: 15px; height: 15px; }
+
+/* Icon Link Orange */
+.icon-link-orange { background-image: url(/images/icons/icon-link-orange.png); width: 16px; height: 8px; }
+
+/* Icon Delete */
+.icon-delete { background-image: url(/images/icons/icon-delete.png); width: 14px; height: 15px; }
+
+/* Icon Active And Hover Item Sidebar */
+.sidebar-item.active .icon-general, .sidebar-item:hover .icon-general { background-image: url(/images/icons/icon-general-white.svg); }
+
+.sidebar-item.active .icon-details, .sidebar-item:hover .icon-details { background-image: url(/images/icons/icon-details-white.svg); }
+
+.sidebar-item.active .icon-links, .sidebar-item:hover .icon-links { background-image: url(/images/icons/icon-links-white.svg); }
+
+.sidebar-item.active .icon-banners, .sidebar-item:hover .icon-banners { background-image: url(/images/icons/icon-banners-white.svg); }
+
+.sidebar-item.active .icon-personal, .sidebar-item:hover .icon-personal { background-image: url(/images/icons/icon-personal-white.svg); }
+
+.sidebar-item.active .icon-payout, .sidebar-item:hover .icon-payout { background-image: url(/images/icons/icon-payout-white.svg); }
+
+.sidebar-item.active .icon-postback, .sidebar-item:hover .icon-postback { background-image: url(/images/icons/icon-postback-white.svg); }
+
+/* Section Navigation */
+/* SECTION NAVIGATION */
+/* Component Navbar */
+/* Component Navbar Top */
+.component--navbar-top .navbar { position: fixed; top: 0; background-color: #ffffff; height: 60px; width: 100%; z-index: 1; border-bottom: 1px solid #e3e3e3; /* Navbar menu */ }
+
+.component--navbar-top .navbar .navbar-menu { margin: 0; float: right; /* Notifications Navbar Item */ /* Logout Navbar Item */ }
+
+.component--navbar-top .navbar .navbar-menu .navbar-item { display: inline-block; border-left: 1px solid #e3e3e3; padding: 18px 20px; }
+
+.component--navbar-top .navbar .navbar-menu .navbar-item span { display: inline-block; }
+
+.component--navbar-top .navbar .navbar-menu .navbar-item h3 { display: inline-block; margin: 0; }
+
+.component--navbar-top .navbar .navbar-menu .notifications { position: relative; padding-right: 10px; }
+
+.component--navbar-top .navbar .navbar-menu .notifications span { cursor: pointer; }
+
+.component--navbar-top .navbar .navbar-menu .notifications .notifications-alert { position: absolute; display: inline-block; top: 7px; left: 28px; }
+
+.component--navbar-top .navbar .navbar-menu .logout span { cursor: pointer; }
+
+/* Component Sidebar */
+/* Sidebar Menu Left */
+.component--sidebar { background-color: #191919; position: fixed; top: 0px; height: 100%; width: 200px; z-index: 2; display: block; overflow-y: auto; }
+
+.component--sidebar.sidebar-hidden { display: none; }
+
+.component--sidebar .sidebar-top-section { position: relative; }
+
+.component--sidebar .sidebar-top-section .sidebar-logo { width: 150px; }
+
+.component--sidebar .sidebar-top-section .logo { margin: 20px; }
+
+.component--sidebar .sidebar-top-section .sidebar-hamburger { position: absolute; top: 25px; right: 20px; cursor: pointer; }
+
+.component--sidebar .sidebar-menu .sidebar-item { padding: 15px 10px; }
+
+.component--sidebar .sidebar-menu .sidebar-item .sidebar-link { color: #999999; text-decoration: none; padding-left: 20px; }
+
+.component--sidebar .sidebar-menu .sidebar-item:hover, .component--sidebar .sidebar-menu .sidebar-item.active { background-color: #282828; border-left: 5px solid #f58220; padding-left: 5px; }
+
+.component--sidebar .sidebar-menu .sidebar-item:hover .sidebar-link, .component--sidebar .sidebar-menu .sidebar-item.active .sidebar-link { color: #ffffff; cursor: pointer; }
+
+.component--sidebar .sidebar-menu .sidebar-separator { width: 100%; height: 1px; background-color: #333333; margin-top: 30px; }
+
+.component--sidebar .sidebar-menu .sidebar-manager h6 { text-transform: uppercase; margin-left: 30px; margin-bottom: 15px; }
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details { position: relative; }
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-image { margin-left: 30px; width: 60px; }
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-online img { position: absolute; top: 0px; left: 62px; }
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name { position: absolute; top: 15px; right: 40px; }
+
+.component--sidebar .sidebar-menu .sidebar-manager .sidebar-manager-details .sidebar-manager-name a { text-decoration: none; }
+
+/* Sidebar show */
+.sidebar-button { display: inline-block; position: relative; }
+
+.sidebar-button .sidebar-hamburger { position: absolute; top: 5px; left: 50px; cursor: pointer; }
+
+/* Section Links */
+/* Links Section */
+.section--links .add-new-link { text-align: center; }
+
+.section--links .links-list .link-box { width: 100%; border-bottom: 1px solid #e3e3e3; padding: 10px; }
+
+.section--links .links-list .link-box:first-of-type { border-top: 1px solid #e3e3e3; margin-top: 20px; }
+
+.section--links .links-list .link-box:hover { background-color: rgba(177, 191, 191, 0.18); transition-duration: 0.3s; }
+
+.section--links .links-list .link-box .description { display: inline-block; width: 250px; }
+
+.section--links .links-list .link-box .description h5 { float: left; }
+
+.section--links .links-list .link-box .link { display: inline-block; margin-left: 25%; }
+
+.section--links .links-list .link-box .link a { float: right; padding: 10px; }
+
+.section--links .links-list .link-box .icons { display: none; float: right; margin: 10px 50px 10px 0; }
+
+.section--links .links-list .link-box:hover .icons { display: inline-block; transition-duration: 0.5s; }
+
+.section--links .links-list .link-box:hover .icons .icon { cursor: pointer; }
+
+/* Pages / Dashboard */
+/* DASHBOARD */
+/* General Statistic */
+/* GENERAL STATISTIC SECTION */
+/* Date Period */
+/* Date Period */
+.component--date-period { text-align: center; }
+
+.component--date-period .date-period { position: relative; display: inline-block; width: 100%; max-width: 370px; padding: 10px; color: #191919; font-size: 14px; border: 1px solid #e3e3e3; border-radius: 3px; box-sizing: border-box; }
+
+.component--date-period .date-period:-ms-input-placeholder { color: #bababa; }
+
+.component--date-period .date-period::placeholder { color: #bababa; }
+
+.component--date-period .date-period:hover, .component--date-period .date-period:focus { border: 1px solid #a6a6a6; outline: none; }
+
+.component--date-period .date-period input { border: 0; outline: none; width: 140px; }
+
+.component--date-period .date-period .date-period-first { margin-right: 10px; border-right: 1px solid #e3e3e3; }
+
+.component--date-period .date-period .date-period-second { margin-left: 10px; }
+
+.component--date-period .date-period .icon-calendar { position: absolute; top: 15px; }
+
+.component--date-period .btn-refresh { width: 41px; height: 40px; padding: 0; }
+
+.component--date-period .btn-refresh span { padding: 0; }
+
+/* General Graph */
+/* GENERAL GRAPH */
+.component--general-graph { /* Graph info */ /* Graph */ }
+
+.component--general-graph .general-graph-info-box { border-bottom: 1px solid #e3e3e3; display: inline-block; width: 90%; }
+
+.component--general-graph .general-graph-info-box .description { float: left; }
+
+.component--general-graph .general-graph-info-box .description h5 { margin: 10px 0; }
+
+.component--general-graph .general-graph-info-box .value { float: right; }
+
+.component--general-graph .general-graph-info-box .value p { font-size: 16px; margin: 10px 0; }
+
+.component--general-graph .general-graph { text-align: center; }
+
+/* Resposive Style */
+/* RESPONSIVE */
+/* Small Device */
+@media (max-width: 767px) { .display-mobile { display: block; }
+  .display-desktop { display: none; }
+  .col-sm-1 { width: 8.33%; }
+  .col-sm-2 { width: 16.66%; }
+  .col-sm-3 { width: 25%; }
+  .col-sm-4 { width: 33.33%; }
+  .col-sm-5 { width: 41.66%; }
+  .col-sm-6 { width: 50%; }
+  .col-sm-7 { width: 58.33%; }
+  .col-sm-8 { width: 66.66%; }
+  .col-sm-9 { width: 75%; }
+  .col-sm-10 { width: 83.33%; }
+  .col-sm-11 { width: 91.66%; }
+  .col-sm-12 { width: 100%; }
+  .col-sm-offset-0 { margin-left: 0; }
+  .col-sm-offset-1 { margin-left: 8.33%; }
+  .col-sm-offset-2 { margin-left: 16.66%; }
+  .col-sm-offset-3 { margin-left: 25%; }
+  .col-sm-offset-4 { margin-left: 33.33%; }
+  .col-sm-offset-5 { margin-left: 41.66%; }
+  .col-sm-offset-6 { margin-left: 50%; }
+  .col-sm-offset-7 { margin-left: 58.33%; }
+  .col-sm-offset-8 { margin-left: 66.66%; }
+  .col-sm-offset-9 { margin-left: 83.33%; }
+  .col-sm-offset-10 { margin-left: 83.33%; }
+  .col-sm-offset-11 { margin-left: 91.66%; }
+  .content { margin: 80px 10px 20px 10px; }
+  .component--sidebar .notifications { position: relative; }
+  .component--sidebar .notifications .notifications-alert { position: absolute; top: -8px; left: 29px; }
+  .component--date-period .date-period .date-period-first { margin-right: 0; }
+  .component--date-period .date-period input { width: 130px; }
+  .component--date-period .date-period .icon-calendar { right: 10px; }
+  .component--date-period .btn { margin-top: 10px; }
+  .section--links .links-list .link-box { padding: 0; }
+  .section--links .links-list .link-box .link { margin-left: 0; }
+  .section--links .links-list .link-box .icons { margin: 0; } }
+
+@media (min-width: 768px) and (max-width: 1199px) { .section--links .links-list .link-box .link { display: inline-block; margin-left: 15%; } }
