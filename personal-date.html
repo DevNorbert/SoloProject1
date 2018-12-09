@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Top Menu -->
+    <div class="component--navbar-top">
+        <div class="navbar">
+            <div class="sidebar-button">
+                <div class="sidebar-hamburger" id="navbar-hamburger">
+                    <img src="images/icons/hamburger.svg" alt="Hamburger menu">
+                </div>
+            </div>
+            <ul class="navbar-menu display-desktop">
+                <li class="navbar-item balance">
+                    <span class="icon icon-wallet"></span>
+                    <h3>$1,500,00</h3>
+                </li>
+                <li class="navbar-item notifications">
+                    <span class="icon icon-notifications"></span>
+                    <div class="notifications-alert">
+                        <img src="images/icons/icon-orange.png" alt="notifications alert">
+                    </div>
+                </li>
+                <li class="navbar-item profile">
+                    <span class="icon icon-profile"></span>
+                    <a class="small-link" href="#">Leonardo Dicaprio</a>
+                </li>
+                <li class="navbar-item logout">
+                    <span class="icon icon-logout"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar Left -->
+    <div class="component--sidebar sidebar-hidden" id="sidebar">
+        <!-- Sidebar top section-->
+        <div class="sidebar-top-section">
+            <div class="sidebar-logo">
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="sidebar-hamburger" id="sidebar-hamburger">
+                <img src="images/icons/hamburger.svg" alt="Hamburger menu">
+            </div>
+        </div>
+        <!-- Sidebar menu -->
+        <div class="sidebar-menu">
+            <div class="sidebar-item active">
+                <a href="index.html" class="sidebar-link"><span class="icon icon-general"></span>General</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-details"></span>Details</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="links.html" class="sidebar-link"><span class="icon icon-links"></span>Links</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="banners.html" class="sidebar-link"><span class="icon icon-banners"></span>Banners</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-personal"></span>Personal data</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-payout"></span>Payout</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-postback"></span>Postback</a>
+            </div>
+            <div class="sidebar-separator"></div>
+            <div class="sidebar-manager">
+                <h6>Your Manager</h6>
+                <div class="sidebar-manager-details">
+                    <div class="sidebar-manager-image">
+                        <img src="images/photo-manager.png" alt="Your Manager">
+                    </div>
+                    <div class="sidebar-manager-online">
+                        <img src="images/icons/icon-online.png" alt="online">
+                    </div>
+                    <div class="sidebar-manager-name">
+                        <a href="#">Mikhael E.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="display-mobile">
+                <div class="sidebar-separator"></div>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-wallet"></span>$1,500,00</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="notifications">
+                            <a href="#" class="sidebar-link"><span class="icon icon-notifications"></span>Notifications</a>
+                            <div class="notifications-alert">
+                                <img src="images/icons/icon-orange.png" alt="notifications alert">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-profile"></span>Leonardo Dicaprio</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-logout"></span>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Content Site -->
+    <div class="content" id="content">
+        <div class="dashboard">
+            <!-- Personal Data -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- Card Header -->
+                        <div class="card-header">
+                            <h4>Personal Data</h4>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- First Section Data -->
+                                <div class="col-md-4 col-center">
+                                    <div class="component--form-field">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" id="name" value="Leonardo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="surname">Surname</label>
+                                            <input type="text" class="form-control" id="surname" value="Dicaprio">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">E-mail</label>
+                                            <input type="email" class="form-control" id="email" value="leo@gmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Phone number</label>
+                                            <input type="text" class="form-control" id="phone" value="+1 432 555 00 44">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Separator -->
+                                <div class="card-separator"></div>
+                                <!-- Second Section Data -->
+                                <div class="col-md-4 col-center">
+                                    <div class="component--form-field">
+                                        <div class="form-group">
+                                            <label for="skype">Skype</label>
+                                            <input type="text" class="form-control" id="skype" value="Leonardo.D">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="icq">ICQ</label>
+                                            <input type="text" class="form-control" id="icq">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="msn">MSN</label>
+                                            <input type="text" class="form-control" id="msn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Separator -->
+                                <div class="card-separator"></div>
+                                <!-- Third Section Data -->
+                                <div class="col-md-4 col-center">
+                                    <div class="component--form-field">
+                                        <div class="form-group">
+                                            <label for="wallet">Wallet</label>
+                                            <input type="text" class="form-control" id="wallet">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Separator -->
+                                <div class="card-separator"></div>
+                                <!-- Fourth Section Data -->
+                                <div class="col-md-4 col-center">
+                                    <div class="component--form-field">
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="passwordrepeat">Repeat</label>
+                                            <input type="password" class="form-control" id="passwordrepeat">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Separator -->
+                                <div class="card-separator"></div>
+                                <!-- Button -->
+                                <div class="col-md-12 text-center">
+                                        <button class="btn btn-orange btn-large">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Scripts JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

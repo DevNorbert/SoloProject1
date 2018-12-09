@@ -152,6 +152,8 @@ li { color: #191919; }
 
 [class*="col-"] { float: left; min-height: 1px; padding: 10px; box-sizing: border-box; }
 
+.col-center { float: inherit; margin: 0 auto; }
+
 .col-md-1 { width: 8.33%; }
 
 .col-md-2 { width: 16.66%; }
@@ -227,16 +229,20 @@ li { color: #191919; }
 
 .card .card-body { padding: 15px 0; }
 
+.card .card-separator { width: 100%; border-bottom: 1px solid #e3e3e3; padding: 15px 0; }
+
 /* Component Form Field */
 .component--form-field .form-group { margin: 15px 0; max-width: 100%; }
 
-.component--form-field .form-group .form-control { padding: 10px; color: #191919; border: 1px solid #e3e3e3; border-radius: 3px; width: 100%; max-width: 100%; margin: 0 auto; box-sizing: border-box; }
+.component--form-field .form-group .form-control { padding: 10px 15px; color: #191919; border: 1px solid #e3e3e3; border-radius: 3px; width: 60%; max-width: 100%; margin: 0 auto; box-sizing: border-box; font-size: 14px; }
 
 .component--form-field .form-group .form-control:-ms-input-placeholder { color: #bababa; }
 
 .component--form-field .form-group .form-control::placeholder { color: #bababa; }
 
 .component--form-field .form-group .form-control:hover, .component--form-field .form-group .form-control:focus { border: 1px solid #a6a6a6; outline: none; }
+
+.component--form-field .form-group label { width: 150px; display: inline-block; font-family: "Roboto", sans-serif; font-size: 16px; color: #a6a6a6; font-weight: 700; }
 
 .component--form-field .form-group .input-password { position: relative; }
 
@@ -253,7 +259,7 @@ li { color: #191919; }
 .icon { display: inline-block; padding-right: 10px; background-repeat: no-repeat; }
 
 /* Icon General */
-.icon-general { background-image: url(/images/icons/icon-general.svg); width: 16px; height: 15px; }
+.icon-general { background-image: url(/images/icons/icongeneral.svg); width: 16px; height: 15px; }
 
 /* Icon Details */
 .icon-details { background-image: url(/images/icons/icon-details.svg); width: 16px; height: 13px; }

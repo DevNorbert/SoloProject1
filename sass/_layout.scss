@@ -108,7 +108,10 @@ li {
     padding: 10px;
     box-sizing: border-box;
 }
-
+.col-center {
+    float: inherit;
+    margin: 0 auto;
+}
 .col-md-1 {
     width: 8.33%;
 }
@@ -222,6 +225,9 @@ li {
 .display-desktop {
     display: block;
 }
+.text-center {
+    text-align: center;
+}
 /* Buttons */
 .btn {
     display: inline-block;
@@ -235,6 +241,10 @@ li {
     &:hover {
         background-color: $dark-light;
     }
+}
+.btn-large {
+    padding: 10px 30px;
+    margin: 30px 0;
 }
 .btn-orange {
     background-color: $orange;
@@ -255,5 +265,11 @@ li {
     }
     .card-body {
         padding: 15px 0;
+    }
+    .card-separator {
+        width: 100%;
+        border-bottom: 1px solid $border-greylight;
+        padding: 15px 0;
+        margin-bottom: 30px;
     }
 }
