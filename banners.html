@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Top Menu -->
+    <div class="component--navbar-top">
+        <div class="navbar">
+            <div class="sidebar-button">
+                <div class="sidebar-hamburger" id="navbar-hamburger">
+                    <img src="images/icons/hamburger.svg" alt="Hamburger menu">
+                </div>
+            </div>
+            <ul class="navbar-menu display-desktop">
+                <li class="navbar-item balance">
+                    <span class="icon icon-wallet"></span>
+                    <h3>$1,500,00</h3>
+                </li>
+                <li class="navbar-item notifications">
+                    <span class="icon icon-notifications"></span>
+                    <div class="notifications-alert">
+                        <img src="images/icons/icon-orange.png" alt="notifications alert">
+                    </div>
+                </li>
+                <li class="navbar-item profile">
+                    <span class="icon icon-profile"></span>
+                    <a class="small-link" href="#">Leonardo Dicaprio</a>
+                </li>
+                <li class="navbar-item logout">
+                    <span class="icon icon-logout"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar Left -->
+    <div class="component--sidebar sidebar-hidden" id="sidebar">
+        <!-- Sidebar top section-->
+        <div class="sidebar-top-section">
+            <div class="sidebar-logo">
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="sidebar-hamburger" id="sidebar-hamburger">
+                <img src="images/icons/hamburger.svg" alt="Hamburger menu">
+            </div>
+        </div>
+        <!-- Sidebar menu -->
+        <div class="sidebar-menu">
+            <div class="sidebar-item active">
+                <a href="index.html" class="sidebar-link"><span class="icon icon-general"></span>General</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-details"></span>Details</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="links.html" class="sidebar-link"><span class="icon icon-links"></span>Links</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="banners.html" class="sidebar-link"><span class="icon icon-banners"></span>Banners</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-personal"></span>Personal data</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-payout"></span>Payout</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-postback"></span>Postback</a>
+            </div>
+            <div class="sidebar-separator"></div>
+            <div class="sidebar-manager">
+                <h6>Your Manager</h6>
+                <div class="sidebar-manager-details">
+                    <div class="sidebar-manager-image">
+                        <img src="images/photo-manager.png" alt="Your Manager">
+                    </div>
+                    <div class="sidebar-manager-online">
+                        <img src="images/icons/icon-online.png" alt="online">
+                    </div>
+                    <div class="sidebar-manager-name">
+                        <a href="#">Mikhael E.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="display-mobile">
+                <div class="sidebar-separator"></div>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-wallet"></span>$1,500,00</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="notifications">
+                            <a href="#" class="sidebar-link"><span class="icon icon-notifications"></span>Notifications</a>
+                            <div class="notifications-alert">
+                                    <img src="images/icons/icon-orange.png" alt="notifications alert">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-profile"></span>Leonardo Dicaprio</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-logout"></span>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Content Site -->
+    <div class="content" id="content">
+        <div class="dashboard">
+            <!-- Links -->
+            <div class="links">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Card -->
+                            <div class="card">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <h4>Banners</h4>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="section--links">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="add-new-link">
+                                                    <button class="btn btn-orange">+ add new</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Links list -->
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12 col-offset-2 col-sm-offset-0">
+                                                <div class="links-list">
+                                                    <div class="link-box">
+                                                        <div class="description">
+                                                            <h5>Banner main</h5>
+                                                        </div>
+                                                        <div class="link">
+                                                            <a href="#">http://www.website.com/bannermain.gif</a>
+                                                        </div>
+                                                        <div class="icons">
+                                                            <span class="icon icon-link-orange"></span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link-box">
+                                                        <div class="description">
+                                                            <h5>Sign up banner</h5>
+                                                        </div>
+                                                        <div class="link">
+                                                            <a href="#">http://www.website.com/signup.gif</a>
+                                                        </div>
+                                                        <div class="icons">
+                                                            <span class="icon icon-link-orange"></span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link-box">
+                                                        <div class="description">
+                                                            <h5>Banner left side</h5>
+                                                        </div>
+                                                        <div class="link">
+                                                            <a href="#">http://www.website.com/leftside.gif</a>
+                                                        </div>
+                                                        <div class="icons">
+                                                            <span class="icon icon-link-orange"></span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link-box">
+                                                        <div class="description">
+                                                            <h5>Vertical banner</h5>
+                                                        </div>
+                                                        <div class="link">
+                                                            <a href="#">http://www.website.com/vert.gif</a>
+                                                        </div>
+                                                        <div class="icons">
+                                                            <span class="icon icon-link-orange"></span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link-box">
+                                                        <div class="description">
+                                                            <h5>Front banner</h5>
+                                                        </div>
+                                                        <div class="link">
+                                                            <a href="#">http://www.website.com/front.gif</a>
+                                                        </div>
+                                                        <div class="icons">
+                                                            <span class="icon icon-link-orange"></span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link-box">
+                                                        <div class="description">
+                                                            <h5>Horizontal banner</h5>
+                                                        </div>
+                                                        <div class="link">
+                                                            <a href="#">http://www.website.com/horizontal.gif</a>
+                                                        </div>
+                                                        <div class="icons">
+                                                            <span class="icon icon-link-orange"></span>
+                                                            <span class="icon icon-delete"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Add New Link-->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="add-new-link">
+                                                    <button class="btn btn-orange">+ add new</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Add New Link -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Links -->
+        </div>
+    </div>
+    <!-- Scripts JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
