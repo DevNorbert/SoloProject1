@@ -99,6 +99,24 @@
     width: 14px;
     height: 15px;
 }
+/* Icon Arrow Left */
+.icon-arrow-left {
+    background-image: url(/images/icons/arrow-left.svg);
+    width: 14px;
+    height: 18px;
+}
+/* Icon Arrow Right */ 
+.icon-arrow-right {
+    background-image: url(/images/icons/arrow-right.svg);
+    width: 14px;
+    height: 18px;
+}
+/* Icon Arrow Up */ 
+.icon-arrow-up {
+    background-image: url(/images/icons/arrow-up.svg);
+    width: 8px;
+    height: 8px;
+}
 /* Icon Active And Hover Item Sidebar */
 .sidebar-item.active, .sidebar-item:hover {
     .icon-general {

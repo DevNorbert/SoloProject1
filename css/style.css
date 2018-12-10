@@ -817,6 +817,27 @@ li {
   height: 15px;
 }
 
+/* Icon Arrow Left */
+.icon-arrow-left {
+  background-image: url(/images/icons/arrow-left.svg);
+  width: 14px;
+  height: 18px;
+}
+
+/* Icon Arrow Right */
+.icon-arrow-right {
+  background-image: url(/images/icons/arrow-right.svg);
+  width: 14px;
+  height: 18px;
+}
+
+/* Icon Arrow Up */
+.icon-arrow-up {
+  background-image: url(/images/icons/arrow-up.svg);
+  width: 8px;
+  height: 8px;
+}
+
 /* Icon Active And Hover Item Sidebar */
 .sidebar-item.active .icon-general, .sidebar-item:hover .icon-general {
   background-image: url(/images/icons/icon-general-white.svg);
@@ -844,6 +865,89 @@ li {
 
 .sidebar-item.active .icon-postback, .sidebar-item:hover .icon-postback {
   background-image: url(/images/icons/icon-postback-white.svg);
+}
+
+/* Component Table */
+/* TABLE */
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper .table {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  margin-top: 30px;
+}
+
+.scroll-wrapper .table thead tr th {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.scroll-wrapper .table thead tr th p {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  margin: 10px;
+  padding: 5px;
+  width: 60%;
+}
+
+.scroll-wrapper .table thead tr th p:hover {
+  background-color: #f5f5f2;
+  border-radius: 5px;
+  color: #191919;
+  cursor: pointer;
+}
+
+.scroll-wrapper .table thead tr th p:hover span {
+  visibility: visible;
+}
+
+.scroll-wrapper .table thead tr th p span {
+  visibility: hidden;
+  position: relative;
+  left: 10px;
+  top: -2px;
+}
+
+.scroll-wrapper .table tbody tr:hover {
+  background-color: rgba(177, 191, 191, 0.18);
+  cursor: pointer;
+}
+
+.scroll-wrapper .table tbody td {
+  font-size: 14px;
+  padding: 25px 15px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+/* PAGINATION */
+.pagination {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 20px 0;
+}
+
+.pagination li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.pagination li.pagination-icon {
+  position: relative;
+  padding: 5px;
+  top: 2px;
+}
+
+.pagination li.active {
+  background-color: #f5f5f2;
+  border-radius: 5px;
+  color: #a6a6a6;
 }
 
 /* Section Navigation */

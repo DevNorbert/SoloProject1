@@ -1,0 +1,86 @@
+/* TABLE */
+.scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+
+    .table {
+        width: 100%;
+        max-width: 100%;
+        border-spacing: 0;
+        margin-top: 30px;
+
+        thead tr th {
+            @include border-bottom;
+
+            p {
+
+                color: $grey;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: left;
+                margin: 10px;
+                padding: 5px;
+                width: 60%;
+
+                &:hover {
+                    background-color: $tabs-grey;
+                    border-radius: 5px;
+                    color: $dark;
+                    cursor: pointer;
+
+                    span {
+                        visibility: visible;
+                    }
+                }
+
+                span {
+                    visibility: hidden;
+                    position: relative;
+                    left: 10px;
+                    top: -2px;
+                }
+            }
+        }
+
+
+        tbody {
+            tr:hover {
+                background-color: $blue-light;
+                cursor: pointer;
+            }
+
+            td {
+                font-size: 14px;
+                padding: 25px 15px;
+                @include border-bottom;
+            }
+        }
+    }
+}
+
+/* PAGINATION */
+.pagination {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: 20px 0;
+
+    li {
+        display: inline-block;
+        padding: 10px 15px;
+
+        &.pagination-icon {
+            position: relative;
+            padding: 5px;
+            top: 2px;
+        }
+
+        &.active {
+            background-color: $tabs-grey;
+            border-radius: 5px;
+            color: $grey;
+        }
+    }
+
+}
