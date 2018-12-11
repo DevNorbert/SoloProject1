@@ -1,0 +1,41 @@
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .popup-content {
+        position: relative;
+        top: 200px;
+        background-color: #ffffff;
+        margin: auto;
+        border: 1px solid #888;
+        width: 40%;
+
+        .popup-header {
+            padding: 15px 15px;
+            margin: 0;
+            @include border-bottom;
+
+            h4 {
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+        .popup-body {
+            padding: 30px;
+            .form-control {
+                width: 100%;
+            }
+            .input-icon {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -26,3 +26,15 @@ function MobileSidebar() {
     }
 };
 MobileSidebar();
+// Popup Login
+var popupLoginBtn = document.getElementById('login-btn');
+var popupLogin = document.getElementById('popup-login');
+
+popupLoginBtn.onclick = function () {
+    popupLogin.style.display = 'block';
+}
+window.onclick = function (event) {
+    if (event.target == popupLogin) {
+        popupLogin.style.display = "none";
+    }
+}

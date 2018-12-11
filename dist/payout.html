@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Top Menu -->
+    <div class="component--navbar-top">
+        <div class="navbar">
+            <div class="sidebar-button">
+                <div class="sidebar-hamburger" id="navbar-hamburger">
+                    <img src="images/icons/hamburger.svg" alt="Hamburger menu">
+                </div>
+            </div>
+            <ul class="navbar-menu display-desktop">
+                <li class="navbar-item balance">
+                    <span class="icon icon-wallet"></span>
+                    <h3>$1,500,00</h3>
+                </li>
+                <li class="navbar-item notifications">
+                    <span class="icon icon-notifications"></span>
+                    <div class="notifications-alert">
+                        <img src="images/icons/icon-orange.png" alt="notifications alert">
+                    </div>
+                </li>
+                <li class="navbar-item profile">
+                    <span class="icon icon-profile"></span>
+                    <a class="small-link" href="#">Leonardo Dicaprio</a>
+                </li>
+                <li class="navbar-item logout">
+                    <span class="icon icon-logout"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sidebar Left -->
+    <div class="component--sidebar sidebar-hidden" id="sidebar">
+        <!-- Sidebar top section-->
+        <div class="sidebar-top-section">
+            <div class="sidebar-logo">
+                <a href="#">
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="sidebar-hamburger" id="sidebar-hamburger">
+                <img src="images/icons/hamburger.svg" alt="Hamburger menu">
+            </div>
+        </div>
+        <!-- Sidebar menu -->
+        <div class="sidebar-menu">
+            <div class="sidebar-item active">
+                <a href="index.html" class="sidebar-link"><span class="icon icon-general"></span>General</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-details"></span>Details</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="links.html" class="sidebar-link"><span class="icon icon-links"></span>Links</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="banners.html" class="sidebar-link"><span class="icon icon-banners"></span>Banners</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-personal"></span>Personal data</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-payout"></span>Payout</a>
+            </div>
+            <div class="sidebar-item">
+                <a href="#" class="sidebar-link"><span class="icon icon-postback"></span>Postback</a>
+            </div>
+            <div class="sidebar-separator"></div>
+            <div class="sidebar-manager">
+                <h6>Your Manager</h6>
+                <div class="sidebar-manager-details">
+                    <div class="sidebar-manager-image">
+                        <img src="images/photo-manager.png" alt="Your Manager">
+                    </div>
+                    <div class="sidebar-manager-online">
+                        <img src="images/icons/icon-online.png" alt="online">
+                    </div>
+                    <div class="sidebar-manager-name">
+                        <a href="#">Mikhael E.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="display-mobile">
+                <div class="sidebar-separator"></div>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-wallet"></span>$1,500,00</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="notifications">
+                            <a href="#" class="sidebar-link"><span class="icon icon-notifications"></span>Notifications</a>
+                            <div class="notifications-alert">
+                                <img src="images/icons/icon-orange.png" alt="notifications alert">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-profile"></span>Leonardo Dicaprio</a>
+                    </div>
+                    <div class="sidebar-item">
+                        <a href="#" class="sidebar-link"><span class="icon icon-logout"></span>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Content Site -->
+    <div class="content" id="content">
+        <div class="dashboard">
+            <!-- Detail Statistic -->
+            <div class="general-statistic">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Card -->
+                            <div class="card">
+                                <!-- Card Header -->
+                                <div class="card-header">
+                                    <h4>Payout History</h4>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- Component Date Period -->
+                                            <div class="component--date-period">
+                                                <div class="date-period">
+                                                    <input type="date" class="date-period-first" value="2016-05-16">
+                                                    <input type="date" class="date-period-second" value="2016-05-16">
+                                                    <span class="icon icon-calendar"></span>
+                                                </div>
+                                                <button class="btn btn-orange btn-refresh"><span class="icon icon-refresh"></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- Component Table-->
+                                            <div class="scroll-wrapper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <p>Date <span class="icon icon-arrow-up"></span></p>
+
+                                                            </th>
+                                                            <th>
+                                                                <p>Amount ($) <span class="icon icon-arrow-up"></span></p>
+                                                            </th>
+                                                            <th>
+                                                                <p>Deal <span class="icon icon-arrow-up"></span></p>
+                                                            </th>
+                                                            <th>
+                                                                <p>Account <span class="icon icon-arrow-up"></span></p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>17/08/02 (12:58)</td>
+                                                            <td>34,425.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15/08/02 (12:58)</td>
+                                                            <td>29,436.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>17/08/02 (12:58)</td>
+                                                            <td>34,425.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15/08/02 (12:58)</td>
+                                                            <td>29,436.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>17/08/02 (12:58)</td>
+                                                            <td>34,425.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15/08/02 (12:58)</td>
+                                                            <td>29,436.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>17/08/02 (12:58)</td>
+                                                            <td>34,425.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15/08/02 (12:58)</td>
+                                                            <td>29,436.00</td>
+                                                            <td>cpl (200)</td>
+                                                            <td>bank</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- End Table -->
+                                            <!-- Pagination -->
+                                            <ul class="pagination">
+                                                <li class="pagination-icon"><a href="#"><span class="icon icon-arrow-left"></span></a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">6</a></li>
+                                                <li><a href="#">7</a></li>
+                                                <li><a href="#">8</a></li>
+                                                <li><a href="#">9</a></li>
+                                                <li class="pagination-icon"><a href="#"><span class="icon icon-arrow-right"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

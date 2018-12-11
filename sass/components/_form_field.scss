@@ -13,6 +13,7 @@
         margin: 0 auto;
         box-sizing: border-box;
         font-size: 14px;
+
         &::placeholder {
             color: $grey-light;
         }
@@ -23,6 +24,7 @@
             outline: none;
         }
     }
+
     label {
         width: 150px;
         display: inline-block;
@@ -31,14 +33,16 @@
         color: $grey;
         font-weight: $weight700;
     }
+
     // Input password
-    .input-password {
+    .input-icon {
         position: relative;
         display: inline-block;
         width: 60%;
+
         &:hover,
         &:focus {
-            .icon-password {
+            .icon {
                 fill: $dark;
             }
         }
@@ -48,16 +52,25 @@
             width: 100%;
         }
 
-        .icon-password {
+        .icon {
             position: absolute;
-            width: 30px;
-            left: 10px;
-            top: 10px;
             fill: $grey;
 
             &:hover,
             &:focus {
                 fill: $dark;
+            }
+
+            &.icon-password {
+                width: 30px;
+                left: 10px;
+                top: 10px;
+            }
+
+            &.icon-user {
+                width: 20px;
+                left: 10px;
+                top: 10px;
             }
         }
     }

@@ -617,8 +617,8 @@ li {
 }
 
 .btn-large {
-  padding: 10px 30px;
-  margin: 30px 0;
+  padding: 9px 50px;
+  margin: 15px 0;
 }
 
 .btn-orange {
@@ -689,31 +689,40 @@ li {
   font-weight: 700;
 }
 
-.component--form-field .form-group .input-password {
+.component--form-field .form-group .input-icon {
   position: relative;
   display: inline-block;
   width: 60%;
 }
 
-.component--form-field .form-group .input-password:hover .icon-password, .component--form-field .form-group .input-password:focus .icon-password {
+.component--form-field .form-group .input-icon:hover .icon, .component--form-field .form-group .input-icon:focus .icon {
   fill: #191919;
 }
 
-.component--form-field .form-group .input-password .form-control {
+.component--form-field .form-group .input-icon .form-control {
   padding-left: 50px;
   width: 100%;
 }
 
-.component--form-field .form-group .input-password .icon-password {
+.component--form-field .form-group .input-icon .icon {
   position: absolute;
-  width: 30px;
-  left: 10px;
-  top: 10px;
   fill: #a6a6a6;
 }
 
-.component--form-field .form-group .input-password .icon-password:hover, .component--form-field .form-group .input-password .icon-password:focus {
+.component--form-field .form-group .input-icon .icon:hover, .component--form-field .form-group .input-icon .icon:focus {
   fill: #191919;
+}
+
+.component--form-field .form-group .input-icon .icon.icon-password {
+  width: 30px;
+  left: 10px;
+  top: 10px;
+}
+
+.component--form-field .form-group .input-icon .icon.icon-user {
+  width: 20px;
+  left: 10px;
+  top: 10px;
 }
 
 /* Component Icons */
@@ -960,6 +969,52 @@ li {
   background-color: #f5f5f2;
   border-radius: 5px;
   color: #a6a6a6;
+}
+
+/* Component Popup */
+/* POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup .popup-content {
+  position: relative;
+  top: 200px;
+  background-color: #ffffff;
+  margin: auto;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.popup .popup-content .popup-header {
+  padding: 15px 15px;
+  margin: 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.popup .popup-content .popup-header h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.popup .popup-content .popup-body {
+  padding: 30px;
+}
+
+.popup .popup-content .popup-body .form-control {
+  width: 100%;
+}
+
+.popup .popup-content .popup-body .input-icon {
+  width: 100%;
 }
 
 /* Section Navigation */
