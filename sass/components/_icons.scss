@@ -7,7 +7,7 @@
 
 /* Icon General */
 .icon-general {
-    background-image: url(/images/icons/icongeneral.svg);
+    background-image: url(/images/icons/icon-general.svg);
     width: 16px;
     height: 15px;
 }
@@ -117,6 +117,13 @@
     width: 8px;
     height: 8px;
 }
+/* Icon Close */ 
+.icon-close {
+    background-image: url(/images/icons/close.svg);
+    width: 14px;
+    height: 14px;
+}
+
 /* Icon Active And Hover Item Sidebar */
 .sidebar-item.active, .sidebar-item:hover {
     .icon-general {

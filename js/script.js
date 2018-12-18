@@ -1,3 +1,4 @@
+'use strict'
 // Sidebar button 
 var buttonOnNavbar = document.getElementById('navbar-hamburger');
 var buttonSidebar = document.getElementById('sidebar-hamburger');
@@ -26,15 +27,39 @@ function MobileSidebar() {
     }
 };
 MobileSidebar();
-// Popup Login
-var popupLoginBtn = document.getElementById('login-btn');
-var popupLogin = document.getElementById('popup-login');
 
-popupLoginBtn.onclick = function () {
-    popupLogin.style.display = 'block';
-}
-window.onclick = function (event) {
-    if (event.target == popupLogin) {
-        popupLogin.style.display = "none";
+// Popup  
+function PopUp() {
+
+    var popupLoginBtn = document.getElementsByClassName('login-btn');
+    var popupLogin = document.getElementById('popup-login');
+    var popupMessengerBtn = document.getElementById('messenger-btn');
+    var popupMessenger = document.getElementById('popup-messenger');
+    var closeMessenger = document.getElementById('close-messenger');
+    var popupQuitBtn = document.getElementById('quit-btn');
+    var popupQuit = document.getElementById('popup-quit');
+
+    popupMessengerBtn.onclick = function () {
+        popupMessenger.style.display = 'block';
+    };
+    popupLoginBtn.onclick = function () {
+        popupLogin.style.display = 'block';
+    };
+    popupQuitBtn.onclick = function () {
+        popupQuit.style.display = 'block';
+    };
+    closeMessenger.onclick = function () {
+        popupMessenger.style.display = 'none';
+    };
+    window.onclick = function (event) {
+        if (event.target === popupMessenger) {
+            popupMessenger.style.display = "none";
+        } else if (event.target === popupLogin) {
+            popupLogin.style.display = "none";
+        } else if (event.target === popupQuit) {
+            popupQuit.style.display = "none";
+        }
     }
-}
+};
+PopUp();
+

@@ -49,6 +49,7 @@
                 background-color: $dark-grey;
                 @include border('left', 5px, solid, $orange);
                 padding-left: 5px;
+                cursor: pointer;
 
                 .sidebar-link {
                     color: $white;

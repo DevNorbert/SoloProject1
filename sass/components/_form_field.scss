@@ -13,6 +13,7 @@
         margin: 0 auto;
         box-sizing: border-box;
         font-size: 14px;
+        line-height: 1.45;
 
         &::placeholder {
             color: $grey-light;
@@ -25,13 +26,19 @@
         }
     }
 
-    label {
+    label span {
         width: 150px;
         display: inline-block;
         font-family: $fontRoboto;
         font-size: $h5-size;
         color: $grey;
         font-weight: $weight700;
+        &.error {
+            font-size: 14px;
+            color: $red;
+            margin-left: 150px;
+            padding: 5px;
+        }
     }
 
     // Input password

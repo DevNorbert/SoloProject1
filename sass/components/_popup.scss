@@ -1,5 +1,5 @@
 /* POPUP */
-.popup {
+.component--popup {
     display: none;
     position: fixed;
     z-index: 1;
@@ -18,23 +18,231 @@
         border: 1px solid #888;
         width: 40%;
 
+        &.messenger-content {
+            width: 60%;
+        }
+
         .popup-header {
-            padding: 15px 15px;
+            padding: 15px 15px 35px 15px;
             margin: 0;
             @include border-bottom;
 
             h4 {
+                float: left;
+                width: 70%;
                 margin: 0;
                 text-transform: uppercase;
             }
+
+            .close {
+                float: right;
+                margin-top: 3px;
+                cursor: pointer;
+            }
         }
+
         .popup-body {
             padding: 30px;
+        }
+
+        // Messenger 
+        .messenger-body {
+            padding: 5px;
+
+            .messenger-header {
+                position: relative;
+                padding-bottom: 40px;
+                @include border-bottom;
+
+                .messenger-image {
+                    float: left;
+
+                    img {
+                        width: 70px;
+                    }
+                }
+
+                .messenger-person {
+                    display: inline-block;
+
+                    h2 {
+                        color: $dark;
+                        margin: 5px 15px;
+                    }
+                }
+
+                .messenger-status {
+                    position: absolute;
+                    top: 40px;
+                    left: 85px;
+                    display: inline-block;
+                    background-color: $green;
+                    color: $white;
+                    padding: 3px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                }
+            }
+
+            .messenger-content {
+                padding: 30px 10px 10px 10px;
+                height: 300px;
+                @include border-bottom;
+                .message-from {
+                    position: relative;
+                    display: inline-block;
+                    margin: 10px 0;
+                    background-color: $message-light;
+                    padding: 10px 15px;
+                    border-radius: 0px 5px 5px 5px;
+                    font-size: 14px;
+
+                    &::after {
+                        content: "";
+                        background-color: $message-light;
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        top: -9px;
+                        -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+                        left: 0;
+                        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+                    }
+                }
+
+                .message-to {
+                    position: relative;
+                    display: inline-block;
+                    margin: 10px 0;
+                    background-color: $message-dark;
+                    color: $white;
+                    padding: 10px 15px;
+                    border-radius: 5px 5px 0px 5px;
+                    font-size: 14px;
+
+                    &::after {
+                        content: "";
+                        background-color: $message-dark;
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        bottom: -9px;
+                        -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+                        right: 0;
+                        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            .messenger-send {
+                .btn {
+                    margin-top: 15px;
+                    padding: 8px 40px;
+                }
+            }
+        }
+        // Popup Quit
+        &.popup-quit {
+            width: 25%;
+            .popup-header {
+                padding: 30px 20px 40px 20px;
+                h4 {
+                    text-transform: none;
+                    font-size: 16px;
+                }
+            }
+            .popup-body {
+                padding: 10px;
+            }
+            .buttons-quit {
+                float: right;
+                .btn {
+                    margin: 0 10px;
+                    padding: 10px 25px;
+                }
+            }
+        }
+    }
+
+    //Form 
+    .form-group {
+        margin: 15px 0;
+        max-width: 100%;
+
+        .form-control {
+            padding: 10px 15px;
+            color: $dark;
+            border: 1px solid $border-greylight;
+            border-radius: 3px;
+            width: 60%;
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-size: 14px;
+
+            &::placeholder {
+                color: $grey-light;
+            }
+
+            &:hover,
+            &:focus {
+                border: 1px solid $grey;
+                outline: none;
+            }
+        }
+
+        label {
+            width: 150px;
+            display: inline-block;
+            font-family: $fontRoboto;
+            font-size: $h5-size;
+            color: $grey;
+            font-weight: $weight700;
+        }
+
+        // Input password
+        .input-icon {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+
+            &:hover,
+            &:focus {
+                .icon {
+                    fill: $dark;
+                }
+            }
+
             .form-control {
+                padding-left: 50px;
                 width: 100%;
             }
-            .input-icon {
-                width: 100%;
+
+            .icon {
+                position: absolute;
+                fill: $grey;
+
+                &:hover,
+                &:focus {
+                    fill: $dark;
+                }
+
+                &.icon-password {
+                    width: 30px;
+                    left: 10px;
+                    top: 10px;
+                }
+
+                &.icon-user {
+                    width: 20px;
+                    left: 10px;
+                    top: 10px;
+                }
+                &.icon-message {
+                    width: 21px;
+                    top: 8px;
+                    left: 8px;
+                }
             }
         }
     }

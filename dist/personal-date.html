@@ -46,7 +46,7 @@
         <!-- Sidebar top section-->
         <div class="sidebar-top-section">
             <div class="sidebar-logo">
-                <a href="#">
+                <a href="index.html">
                     <img class="logo" src="images/logo.png" alt="Logo">
                 </a>
             </div>
@@ -56,23 +56,23 @@
         </div>
         <!-- Sidebar menu -->
         <div class="sidebar-menu">
-            <div class="sidebar-item active">
+            <div class="sidebar-item" onclick="location.href='index.html';">
                 <a href="index.html" class="sidebar-link"><span class="icon icon-general"></span>General</a>
             </div>
-            <div class="sidebar-item">
-                <a href="#" class="sidebar-link"><span class="icon icon-details"></span>Details</a>
+            <div class="sidebar-item" onclick="location.href='details.html';">
+                <a href="details.html" class="sidebar-link"><span class="icon icon-details"></span>Details</a>
             </div>
-            <div class="sidebar-item">
+            <div class="sidebar-item" onclick="location.href='links.html';">
                 <a href="links.html" class="sidebar-link"><span class="icon icon-links"></span>Links</a>
             </div>
-            <div class="sidebar-item">
+            <div class="sidebar-item" onclick="location.href='banners.html';">
                 <a href="banners.html" class="sidebar-link"><span class="icon icon-banners"></span>Banners</a>
             </div>
-            <div class="sidebar-item">
-                <a href="#" class="sidebar-link"><span class="icon icon-personal"></span>Personal data</a>
+            <div class="sidebar-item active" onclick="location.href='personal-date.html';">
+                <a href="personal-date.html" class="sidebar-link"><span class="icon icon-personal"></span>Personal data</a>
             </div>
-            <div class="sidebar-item">
-                <a href="#" class="sidebar-link"><span class="icon icon-payout"></span>Payout</a>
+            <div class="sidebar-item" onclick="location.href='payout.html';">
+                <a href="payout.html" class="sidebar-link"><span class="icon icon-payout"></span>Payout</a>
             </div>
             <div class="sidebar-item">
                 <a href="#" class="sidebar-link"><span class="icon icon-postback"></span>Postback</a>
@@ -132,78 +132,104 @@
                         <!-- Card Body -->
                         <div class="card-body">
                             <div class="row">
-                                <!-- First Section Data -->
-                                <div class="col-md-4 col-center">
-                                    <div class="component--form-field">
-                                        <div class="form-group">
-                                            <label for="name">Name</label>
-                                            <input type="text" class="form-control" id="name" value="Leonardo">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="surname">Surname</label>
-                                            <input type="text" class="form-control" id="surname" value="Dicaprio">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">E-mail</label>
-                                            <input type="email" class="form-control" id="email" value="leo@gmail.com">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="phone">Phone number</label>
-                                            <input type="text" class="form-control" id="phone" value="+1 432 555 00 44">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Separator -->
-                                <div class="card-separator"></div>
-                                <!-- Second Section Data -->
-                                <div class="col-md-4 col-center">
-                                    <div class="component--form-field">
-                                        <div class="form-group">
-                                            <label for="skype">Skype</label>
-                                            <input type="text" class="form-control" id="skype" value="Leonardo.D">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="icq">ICQ</label>
-                                            <input type="text" class="form-control" id="icq">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="msn">MSN</label>
-                                            <input type="text" class="form-control" id="msn">
+                                <form novalidate>
+                                    <!-- First Section Data -->
+                                    <div class="col-md-4 col-center">
+                                        <div class="component--form-field">
+                                            <div class="form-group">
+                                                <label for="name">
+                                                    <span>Name</span>
+                                                    <input type="text" class="form-control" id="name" value="Leonardo">
+                                                    <span class="error"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="surname">
+                                                    <span>Surname</span>
+                                                    <input type="text" class="form-control" id="surname" value="Dicaprio">
+                                                    <span class="error"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">
+                                                    <span>E-mail</span>
+                                                    <input type="email" class="form-control" id="email" name="email"
+                                                        value="leo@gmail.com">
+                                                    <span class="error"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">
+                                                    <span>Phone number</span>
+                                                    <input type="text" class="form-control" id="phone" value="+1 432 555 00 44">
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Card Separator -->
-                                <div class="card-separator"></div>
-                                <!-- Third Section Data -->
-                                <div class="col-md-4 col-center">
-                                    <div class="component--form-field">
-                                        <div class="form-group">
-                                            <label for="wallet">Wallet</label>
-                                            <input type="text" class="form-control" id="wallet">
+                                    <!-- Card Separator -->
+                                    <div class="card-separator"></div>
+                                    <!-- Second Section Data -->
+                                    <div class="col-md-4 col-center">
+                                        <div class="component--form-field">
+                                            <div class="form-group">
+                                                <label for="skype">
+                                                    <span>Skype</span>
+                                                    <input type="text" class="form-control" id="skype" value="Leonardo.D">
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="icq">
+                                                    <span>ICQ</span>
+                                                    <input type="text" class="form-control" id="icq">
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="msn">
+                                                    <span>MSN</span>
+                                                    <input type="text" class="form-control" id="msn">
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Card Separator -->
-                                <div class="card-separator"></div>
-                                <!-- Fourth Section Data -->
-                                <div class="col-md-4 col-center">
-                                    <div class="component--form-field">
-                                        <div class="form-group">
-                                            <label for="password">Password</label>
-                                            <input type="password" class="form-control" id="password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="passwordrepeat">Repeat</label>
-                                            <input type="password" class="form-control" id="passwordrepeat">
+                                    <!-- Card Separator -->
+                                    <div class="card-separator"></div>
+                                    <!-- Third Section Data -->
+                                    <div class="col-md-4 col-center">
+                                        <div class="component--form-field">
+                                            <div class="form-group">
+                                                <label for="wallet">
+                                                    <span>Wallet</span>
+                                                    <input type="text" class="form-control" id="wallet">
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Card Separator -->
-                                <div class="card-separator"></div>
-                                <!-- Button -->
-                                <div class="col-md-12 text-center">
+                                    <!-- Card Separator -->
+                                    <div class="card-separator"></div>
+                                    <!-- Fourth Section Data -->
+                                    <div class="col-md-4 col-center">
+                                        <div class="component--form-field">
+                                            <div class="form-group">
+                                                <label for="password">
+                                                    <span>Password</span>
+                                                    <input type="password" class="form-control" id="password">
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="passwordrepeat">
+                                                    <span>Repeat</span>
+                                                    <input type="password" class="form-control" id="passwordrepeat">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card Separator -->
+                                    <div class="card-separator"></div>
+                                    <!-- Button -->
+                                    <div class="col-md-12 text-center">
                                         <button class="btn btn-orange btn-large">Save</button>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -214,6 +240,7 @@
     </div>
     <!-- Scripts JS -->
     <script src="js/script.js"></script>
+    <script src="js/validate-form.js"></script>
 </body>
 
 </html>

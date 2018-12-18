@@ -220,9 +220,11 @@ li { color: #191919; }
 
 .btn:hover { background-color: #333333; }
 
-.btn-large { padding: 10px 30px; margin: 30px 0; }
+.btn-large { padding: 9px 50px; margin: 15px 0; }
 
 .btn-orange { background-color: #f58220; }
+
+.btn-grey { background-color: #a6a6a6; }
 
 /* Card Style */
 .card { background-color: #ffffff; box-shadow: 0px 0px 16px 1px rgba(71, 71, 71, 0.1); }
@@ -238,7 +240,7 @@ li { color: #191919; }
 /* Component Form Field */
 .component--form-field .form-group { margin: 15px 0; max-width: 100%; }
 
-.component--form-field .form-group .form-control { padding: 10px 15px; color: #191919; border: 1px solid #e3e3e3; border-radius: 3px; width: 60%; max-width: 100%; margin: 0 auto; box-sizing: border-box; font-size: 14px; }
+.component--form-field .form-group .form-control { padding: 10px 15px; color: #191919; border: 1px solid #e3e3e3; border-radius: 3px; width: 60%; max-width: 100%; margin: 0 auto; box-sizing: border-box; font-size: 14px; line-height: 1.45; }
 
 .component--form-field .form-group .form-control:-ms-input-placeholder { color: #bababa; }
 
@@ -246,24 +248,30 @@ li { color: #191919; }
 
 .component--form-field .form-group .form-control:hover, .component--form-field .form-group .form-control:focus { border: 1px solid #a6a6a6; outline: none; }
 
-.component--form-field .form-group label { width: 150px; display: inline-block; font-family: "Roboto", sans-serif; font-size: 16px; color: #a6a6a6; font-weight: 700; }
+.component--form-field .form-group label span { width: 150px; display: inline-block; font-family: "Roboto", sans-serif; font-size: 16px; color: #a6a6a6; font-weight: 700; }
 
-.component--form-field .form-group .input-password { position: relative; display: inline-block; width: 60%; }
+.component--form-field .form-group label span.error { font-size: 14px; color: #c0392b; margin-left: 150px; padding: 5px; }
 
-.component--form-field .form-group .input-password:hover .icon-password, .component--form-field .form-group .input-password:focus .icon-password { fill: #191919; }
+.component--form-field .form-group .input-icon { position: relative; display: inline-block; width: 60%; }
 
-.component--form-field .form-group .input-password .form-control { padding-left: 50px; width: 100%; }
+.component--form-field .form-group .input-icon:hover .icon, .component--form-field .form-group .input-icon:focus .icon { fill: #191919; }
 
-.component--form-field .form-group .input-password .icon-password { position: absolute; width: 30px; left: 10px; top: 10px; fill: #a6a6a6; }
+.component--form-field .form-group .input-icon .form-control { padding-left: 50px; width: 100%; }
 
-.component--form-field .form-group .input-password .icon-password:hover, .component--form-field .form-group .input-password .icon-password:focus { fill: #191919; }
+.component--form-field .form-group .input-icon .icon { position: absolute; fill: #a6a6a6; }
+
+.component--form-field .form-group .input-icon .icon:hover, .component--form-field .form-group .input-icon .icon:focus { fill: #191919; }
+
+.component--form-field .form-group .input-icon .icon.icon-password { width: 30px; left: 10px; top: 10px; }
+
+.component--form-field .form-group .input-icon .icon.icon-user { width: 20px; left: 10px; top: 10px; }
 
 /* Component Icons */
 /* Icons */
 .icon { display: inline-block; padding-right: 10px; background-repeat: no-repeat; }
 
 /* Icon General */
-.icon-general { background-image: url(/images/icons/icongeneral.svg); width: 16px; height: 15px; }
+.icon-general { background-image: url(/images/icons/icon-general.svg); width: 16px; height: 15px; }
 
 /* Icon Details */
 .icon-details { background-image: url(/images/icons/icon-details.svg); width: 16px; height: 13px; }
@@ -316,6 +324,9 @@ li { color: #191919; }
 /* Icon Arrow Up */
 .icon-arrow-up { background-image: url(/images/icons/arrow-up.svg); width: 8px; height: 8px; }
 
+/* Icon Close */
+.icon-close { background-image: url(/images/icons/close.svg); width: 14px; height: 14px; }
+
 /* Icon Active And Hover Item Sidebar */
 .sidebar-item.active .icon-general, .sidebar-item:hover .icon-general { background-image: url(/images/icons/icon-general-white.svg); }
 
@@ -362,10 +373,85 @@ li { color: #191919; }
 
 /* Component Popup */
 /* POPUP */
-.popup { display: none; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ padding-top: 100px; /* Location of the box */ left: 0; top: 0; width: 100%; /* Full width */ height: 100%; /* Full height */ overflow: auto; /* Enable scroll if needed */ background-color: black; /* Fallback color */ background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */ }
+.component--popup { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.7); }
 
-/* Modal Content */
-.popup-content { background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; }
+.component--popup .popup-content { position: relative; top: 200px; background-color: #ffffff; margin: auto; border: 1px solid #888; width: 40%; }
+
+.component--popup .popup-content.messenger-content { width: 60%; }
+
+.component--popup .popup-content .popup-header { padding: 15px 15px 35px 15px; margin: 0; border-bottom: 1px solid #e3e3e3; }
+
+.component--popup .popup-content .popup-header h4 { float: left; width: 70%; margin: 0; text-transform: uppercase; }
+
+.component--popup .popup-content .popup-header .close { float: right; margin-top: 3px; cursor: pointer; }
+
+.component--popup .popup-content .popup-body { padding: 30px; }
+
+.component--popup .popup-content .messenger-body { padding: 5px; }
+
+.component--popup .popup-content .messenger-body .messenger-header { position: relative; padding-bottom: 40px; border-bottom: 1px solid #e3e3e3; }
+
+.component--popup .popup-content .messenger-body .messenger-header .messenger-image { float: left; }
+
+.component--popup .popup-content .messenger-body .messenger-header .messenger-image img { width: 70px; }
+
+.component--popup .popup-content .messenger-body .messenger-header .messenger-person { display: inline-block; }
+
+.component--popup .popup-content .messenger-body .messenger-header .messenger-person h2 { color: #191919; margin: 5px 15px; }
+
+.component--popup .popup-content .messenger-body .messenger-header .messenger-status { position: absolute; top: 40px; left: 85px; display: inline-block; background-color: #25b922; color: #ffffff; padding: 3px; font-size: 12px; border-radius: 3px; }
+
+.component--popup .popup-content .messenger-body .messenger-content { padding: 30px 10px 10px 10px; height: 300px; border-bottom: 1px solid #e3e3e3; }
+
+.component--popup .popup-content .messenger-body .messenger-content .message-from { position: relative; display: inline-block; margin: 10px 0; background-color: #F3F3F1; padding: 10px 15px; border-radius: 0px 5px 5px 5px; font-size: 14px; }
+
+.component--popup .popup-content .messenger-body .messenger-content .message-from::after { content: ""; background-color: #F3F3F1; width: 10px; height: 10px; position: absolute; top: -9px; -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%); left: 0; clip-path: polygon(0 0, 0% 100%, 100% 100%); }
+
+.component--popup .popup-content .messenger-body .messenger-content .message-to { position: relative; display: inline-block; margin: 10px 0; background-color: #BABABA; color: #ffffff; padding: 10px 15px; border-radius: 5px 5px 0px 5px; font-size: 14px; }
+
+.component--popup .popup-content .messenger-body .messenger-content .message-to::after { content: ""; background-color: #BABABA; width: 10px; height: 10px; position: absolute; bottom: -9px; -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%); right: 0; clip-path: polygon(0 0, 0% 100%, 100% 100%); transform: rotate(180deg); }
+
+.component--popup .popup-content .messenger-body .messenger-send .btn { margin-top: 15px; padding: 8px 40px; }
+
+.component--popup .popup-content.popup-quit { width: 25%; }
+
+.component--popup .popup-content.popup-quit .popup-header { padding: 30px 20px 40px 20px; }
+
+.component--popup .popup-content.popup-quit .popup-header h4 { text-transform: none; font-size: 16px; }
+
+.component--popup .popup-content.popup-quit .popup-body { padding: 10px; }
+
+.component--popup .popup-content.popup-quit .buttons-quit { float: right; }
+
+.component--popup .popup-content.popup-quit .buttons-quit .btn { margin: 0 10px; padding: 10px 25px; }
+
+.component--popup .form-group { margin: 15px 0; max-width: 100%; }
+
+.component--popup .form-group .form-control { padding: 10px 15px; color: #191919; border: 1px solid #e3e3e3; border-radius: 3px; width: 60%; max-width: 100%; margin: 0 auto; box-sizing: border-box; font-size: 14px; }
+
+.component--popup .form-group .form-control:-ms-input-placeholder { color: #bababa; }
+
+.component--popup .form-group .form-control::placeholder { color: #bababa; }
+
+.component--popup .form-group .form-control:hover, .component--popup .form-group .form-control:focus { border: 1px solid #a6a6a6; outline: none; }
+
+.component--popup .form-group label { width: 150px; display: inline-block; font-family: "Roboto", sans-serif; font-size: 16px; color: #a6a6a6; font-weight: 700; }
+
+.component--popup .form-group .input-icon { position: relative; display: inline-block; width: 100%; }
+
+.component--popup .form-group .input-icon:hover .icon, .component--popup .form-group .input-icon:focus .icon { fill: #191919; }
+
+.component--popup .form-group .input-icon .form-control { padding-left: 50px; width: 100%; }
+
+.component--popup .form-group .input-icon .icon { position: absolute; fill: #a6a6a6; }
+
+.component--popup .form-group .input-icon .icon:hover, .component--popup .form-group .input-icon .icon:focus { fill: #191919; }
+
+.component--popup .form-group .input-icon .icon.icon-password { width: 30px; left: 10px; top: 10px; }
+
+.component--popup .form-group .input-icon .icon.icon-user { width: 20px; left: 10px; top: 10px; }
+
+.component--popup .form-group .input-icon .icon.icon-message { width: 21px; top: 8px; left: 8px; }
 
 /* Section Navigation */
 /* SECTION NAVIGATION */
@@ -407,7 +493,7 @@ li { color: #191919; }
 
 .component--sidebar .sidebar-menu .sidebar-item .sidebar-link { color: #999999; text-decoration: none; padding-left: 20px; }
 
-.component--sidebar .sidebar-menu .sidebar-item:hover, .component--sidebar .sidebar-menu .sidebar-item.active { background-color: #282828; border-left: 5px solid #f58220; padding-left: 5px; }
+.component--sidebar .sidebar-menu .sidebar-item:hover, .component--sidebar .sidebar-menu .sidebar-item.active { background-color: #282828; border-left: 5px solid #f58220; padding-left: 5px; cursor: pointer; }
 
 .component--sidebar .sidebar-menu .sidebar-item:hover .sidebar-link, .component--sidebar .sidebar-menu .sidebar-item.active .sidebar-link { color: #ffffff; cursor: pointer; }
 
@@ -440,7 +526,7 @@ li { color: #191919; }
 
 .section--links .links-list .link-box:hover { background-color: rgba(177, 191, 191, 0.18); transition-duration: 0.3s; }
 
-.section--links .links-list .link-box .description { display: inline-block; width: 250px; }
+.section--links .links-list .link-box .description { display: inline-block; width: 170px; }
 
 .section--links .links-list .link-box .description h5 { float: left; }
 
