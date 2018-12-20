@@ -31,7 +31,7 @@ MobileSidebar();
 // Popup  
 function PopUp() {
 
-    var popupLoginBtn = document.getElementsByClassName('login-btn');
+    var popupLoginBtn = document.getElementById('login-btn');
     var popupLogin = document.getElementById('popup-login');
     var popupMessengerBtn = document.getElementById('messenger-btn');
     var popupMessenger = document.getElementById('popup-messenger');
@@ -40,7 +40,7 @@ function PopUp() {
     var popupQuit = document.getElementById('popup-quit');
 
     popupMessengerBtn.onclick = function () {
-        popupMessenger.style.display = 'block';
+        popupMessenger.classList.add('show');
     };
     popupLoginBtn.onclick = function () {
         popupLogin.style.display = 'block';
@@ -49,11 +49,11 @@ function PopUp() {
         popupQuit.style.display = 'block';
     };
     closeMessenger.onclick = function () {
-        popupMessenger.style.display = 'none';
+        popupMessenger.classList.remove('show');
     };
     window.onclick = function (event) {
         if (event.target === popupMessenger) {
-            popupMessenger.style.display = "none";
+            popupMessenger.classList.remove('show');
         } else if (event.target === popupLogin) {
             popupLogin.style.display = "none";
         } else if (event.target === popupQuit) {
@@ -62,4 +62,3 @@ function PopUp() {
     }
 };
 PopUp();
-

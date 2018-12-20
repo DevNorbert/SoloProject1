@@ -271,76 +271,76 @@ li { color: #191919; }
 .icon { display: inline-block; padding-right: 10px; background-repeat: no-repeat; }
 
 /* Icon General */
-.icon-general { background-image: url(/images/icons/icon-general.svg); width: 16px; height: 15px; }
+.icon-general { background-image: url(../images/icons/icon-general.svg); width: 16px; height: 15px; }
 
 /* Icon Details */
-.icon-details { background-image: url(/images/icons/icon-details.svg); width: 16px; height: 13px; }
+.icon-details { background-image: url(../images/icons/icon-details.svg); width: 16px; height: 13px; }
 
 /* Icon Links */
-.icon-links { background-image: url(/images/icons/icon-links.svg); width: 16px; height: 10px; }
+.icon-links { background-image: url(../images/icons/icon-links.svg); width: 16px; height: 10px; }
 
 /* Icon Banners */
-.icon-banners { background-image: url(/images/icons/icon-banners.svg); width: 16px; height: 13px; }
+.icon-banners { background-image: url(../images/icons/icon-banners.svg); width: 16px; height: 13px; }
 
 /* Icon Personal */
-.icon-personal { background-image: url(/images/icons/icon-personal.svg); width: 16px; height: 13px; }
+.icon-personal { background-image: url(../images/icons/icon-personal.svg); width: 16px; height: 13px; }
 
 /* Icon Payout */
-.icon-payout { background-image: url(/images/icons/icon-payout.svg); width: 16px; height: 13px; }
+.icon-payout { background-image: url(../images/icons/icon-payout.svg); width: 16px; height: 13px; }
 
 /* Icon Postback */
-.icon-postback { background-image: url(/images/icons/icon-postback.svg); width: 16px; height: 14px; }
+.icon-postback { background-image: url(../images/icons/icon-postback.svg); width: 16px; height: 14px; }
 
 /* Icon Wallter */
-.icon-wallet { background-image: url(/images/icons/icon-wallet.png); width: 17px; height: 18px; }
+.icon-wallet { background-image: url(../images/icons/icon-wallet.png); width: 17px; height: 18px; }
 
 /* Icon Notifications */
-.icon-notifications { background-image: url(/images/icons/icon-notifications.png); width: 16px; height: 17px; }
+.icon-notifications { background-image: url(../images/icons/icon-notifications.png); width: 16px; height: 17px; }
 
 /* Icon Profile */
-.icon-profile { background-image: url(/images/icons/icon-profile.png); width: 17px; height: 17px; }
+.icon-profile { background-image: url(../images/icons/icon-profile.png); width: 17px; height: 17px; }
 
 /* Icon Logout */
-.icon-logout { background-image: url(/images/icons/icon-logout.png); width: 19px; height: 15px; }
+.icon-logout { background-image: url(../images/icons/icon-logout.png); width: 19px; height: 15px; }
 
 /* Icon Calendar */
-.icon-calendar { background-image: url(/images/icons/icon-calendar.png); width: 13px; height: 13px; }
+.icon-calendar { background-image: url(../images/icons/icon-calendar.png); width: 13px; height: 13px; }
 
 /* Icon Refresh */
-.icon-refresh { background-image: url(/images/icons/icon-refresh.png); width: 15px; height: 15px; }
+.icon-refresh { background-image: url(../images/icons/icon-refresh.png); width: 15px; height: 15px; }
 
 /* Icon Link Orange */
-.icon-link-orange { background-image: url(/images/icons/icon-link-orange.png); width: 16px; height: 8px; }
+.icon-link-orange { background-image: url(../images/icons/icon-link-orange.png); width: 16px; height: 8px; }
 
 /* Icon Delete */
-.icon-delete { background-image: url(/images/icons/icon-delete.png); width: 14px; height: 15px; }
+.icon-delete { background-image: url(../images/icons/icon-delete.png); width: 14px; height: 15px; }
 
 /* Icon Arrow Left */
-.icon-arrow-left { background-image: url(/images/icons/arrow-left.svg); width: 14px; height: 18px; }
+.icon-arrow-left { background-image: url(../images/icons/arrow-left.svg); width: 14px; height: 18px; }
 
 /* Icon Arrow Right */
-.icon-arrow-right { background-image: url(/images/icons/arrow-right.svg); width: 14px; height: 18px; }
+.icon-arrow-right { background-image: url(../images/icons/arrow-right.svg); width: 14px; height: 18px; }
 
 /* Icon Arrow Up */
-.icon-arrow-up { background-image: url(/images/icons/arrow-up.svg); width: 8px; height: 8px; }
+.icon-arrow-up { background-image: url(../images/icons/arrow-up.svg); width: 8px; height: 8px; }
 
 /* Icon Close */
-.icon-close { background-image: url(/images/icons/close.svg); width: 14px; height: 14px; }
+.icon-close { background-image: url(../images/icons/close.svg); width: 14px; height: 14px; }
 
 /* Icon Active And Hover Item Sidebar */
-.sidebar-item.active .icon-general, .sidebar-item:hover .icon-general { background-image: url(/images/icons/icon-general-white.svg); }
+.sidebar-item.active .icon-general, .sidebar-item:hover .icon-general { background-image: url(../images/icons/icon-general-white.svg); }
 
-.sidebar-item.active .icon-details, .sidebar-item:hover .icon-details { background-image: url(/images/icons/icon-details-white.svg); }
+.sidebar-item.active .icon-details, .sidebar-item:hover .icon-details { background-image: url(../images/icons/icon-details-white.svg); }
 
-.sidebar-item.active .icon-links, .sidebar-item:hover .icon-links { background-image: url(/images/icons/icon-links-white.svg); }
+.sidebar-item.active .icon-links, .sidebar-item:hover .icon-links { background-image: url(../images/icons/icon-links-white.svg); }
 
-.sidebar-item.active .icon-banners, .sidebar-item:hover .icon-banners { background-image: url(/images/icons/icon-banners-white.svg); }
+.sidebar-item.active .icon-banners, .sidebar-item:hover .icon-banners { background-image: url(../images/icons/icon-banners-white.svg); }
 
-.sidebar-item.active .icon-personal, .sidebar-item:hover .icon-personal { background-image: url(/images/icons/icon-personal-white.svg); }
+.sidebar-item.active .icon-personal, .sidebar-item:hover .icon-personal { background-image: url(../images/icons/icon-personal-white.svg); }
 
-.sidebar-item.active .icon-payout, .sidebar-item:hover .icon-payout { background-image: url(/images/icons/icon-payout-white.svg); }
+.sidebar-item.active .icon-payout, .sidebar-item:hover .icon-payout { background-image: url(../images/icons/icon-payout-white.svg); }
 
-.sidebar-item.active .icon-postback, .sidebar-item:hover .icon-postback { background-image: url(/images/icons/icon-postback-white.svg); }
+.sidebar-item.active .icon-postback, .sidebar-item:hover .icon-postback { background-image: url(../images/icons/icon-postback-white.svg); }
 
 /* Component Table */
 /* TABLE */
@@ -373,9 +373,15 @@ li { color: #191919; }
 
 /* Component Popup */
 /* POPUP */
-.component--popup { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.7); }
+.component--popup { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.7); }
 
-.component--popup .popup-content { position: relative; top: 200px; background-color: #ffffff; margin: auto; border: 1px solid #888; width: 40%; }
+.component--popup.show { display: -ms-flexbox; display: flex; }
+
+.component--popup::webkit-scrollbar { display: none; }
+
+.component--popup .popup-content { position: relative; background-color: #ffffff; margin: auto; border: 1px solid #888; width: 40%; }
+
+.component--popup .popup-content.show { display: block; }
 
 .component--popup .popup-content.messenger-content { width: 60%; }
 
@@ -622,6 +628,8 @@ li { color: #191919; }
   .component--date-period .btn { margin-top: 10px; }
   .section--links .links-list .link-box { padding: 0; }
   .section--links .links-list .link-box .link { margin-left: 0; }
-  .section--links .links-list .link-box .icons { margin: 0; } }
+  .section--links .links-list .link-box .icons { margin: 0; }
+  .component--popup .popup-content .popup-header h4 { font-size: 16px; width: 80%; }
+  .component--popup .popup-content.messenger-content { width: 95%; } }
 
 @media (min-width: 768px) and (max-width: 1199px) { .section--links .links-list .link-box .link { display: inline-block; margin-left: 15%; } }

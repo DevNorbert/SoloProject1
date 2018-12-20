@@ -38,32 +38,51 @@
             .date-period-first {
                 margin-right: 0;
             }
+
             input {
                 width: 130px;
             }
+
             .icon-calendar {
                 right: 10px;
             }
         }
+
         .btn {
             margin-top: 10px;
         }
     }
+
     // Section Links 
     .section--links {
         .links-list .link-box {
             padding: 0;
+
             .link {
                 margin-left: 0;
             }
+
             .icons {
                 margin: 0;
             }
         }
     }
+
+    // PopUp
+    .component--popup .popup-content {
+        .popup-header h4 {
+            font-size: 16px;
+            width: 80%;
+        }
+        &.messenger-content {
+            width: 95%;
+        }
+    }
 }
+
 // Medium Device
 @media(min-width:768px) and (max-width: 1199px) {
+
     // Section links 
     .section--links .links-list .link-box .link {
         display: inline-block;

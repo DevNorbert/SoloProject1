@@ -2,7 +2,7 @@
 .component--popup {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -10,14 +10,22 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
 
+    &.show {
+        display: flex;
+    }
+    &::webkit-scrollbar {
+        display: none;
+    }
     .popup-content {
         position: relative;
-        top: 200px;
         background-color: #ffffff;
         margin: auto;
         border: 1px solid #888;
         width: 40%;
 
+        &.show {
+            display: block;
+        }
         &.messenger-content {
             width: 60%;
         }
