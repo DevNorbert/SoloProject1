@@ -52,7 +52,10 @@
             margin-top: 10px;
         }
     }
-
+    // General Graph 
+    .component--general-graph .general-graph {
+        width: 100%;
+    }
     // Section Links 
     .section--links {
         .links-list .link-box {
@@ -74,18 +77,48 @@
             font-size: 16px;
             width: 80%;
         }
+
+        // PopUp Messenger
         &.messenger-content {
-            width: 95%;
+            width: 85%;
+        }
+
+        .messenger-body .messenger-send .btn {
+            margin-top: 15px;
+            padding: 8px 20px;
+            width: 100%;
         }
     }
 }
 
 // Medium Device
 @media(min-width:768px) and (max-width: 1199px) {
-
+    // General Graph 
+    .component--general-graph .general-graph {
+        width: 100%;
+    }
     // Section links 
     .section--links .links-list .link-box .link {
         display: inline-block;
         margin-left: 15%;
+    }
+
+    // PopUp
+    .component--popup .popup-content {
+        .popup-header h4 {
+            font-size: 16px;
+            width: 80%;
+        }
+
+        // PopUp Messenger
+        &.messenger-content {
+            width: 95%;
+        }
+
+        .messenger-body .messenger-send .btn {
+            margin-top: 15px;
+            padding: 8px 20px;
+            width: 100%;
+        }
     }
 }

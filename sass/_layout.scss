@@ -133,7 +133,7 @@ li {
 
 @mixin grid($prefix) {
     @for $i from 1 through 12 {
-        .col-#{$prefix}-#{i} {
+        .col-#{$prefix}-#{$i} {
             $width: 100% / 12 * $i;
             flex: 0 0 $width;
             width: $width;
@@ -141,12 +141,11 @@ li {
     }
 }
 
-@mixin grid-offset($prefix) {
-    @for $i from 1 through 12 {
-        .col-#{$prefix}-offset-#{i} {
+@mixin grid-offset($prefix2) {
+    @for $i from 1 through 11 {
+        .col-#{$prefix2}-offset-#{$i} {
             $width: 100% / 12 * $i;
-            flex: 0 0 $width;
-            width: $width;
+            margin-left: $width;
         }
     }
 }
