@@ -52,10 +52,12 @@
             margin-top: 10px;
         }
     }
+
     // General Graph 
     .component--general-graph .general-graph {
         width: 100%;
     }
+
     // Section Links 
     .section--links {
         .links-list .link-box {
@@ -67,6 +69,17 @@
 
             .icons {
                 margin: 0;
+            }
+        }
+    }
+
+    // Personal Date
+    .component--form-field .form-group {
+        label span {
+            margin-bottom: 10px;
+
+            .form-control {
+                width: 100%;
             }
         }
     }
@@ -93,10 +106,12 @@
 
 // Medium Device
 @media(min-width:768px) and (max-width: 1199px) {
+
     // General Graph 
     .component--general-graph .general-graph {
         width: 100%;
     }
+
     // Section links 
     .section--links .links-list .link-box .link {
         display: inline-block;
